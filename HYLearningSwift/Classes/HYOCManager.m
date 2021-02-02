@@ -6,8 +6,7 @@
 //
 
 #import "HYOCManager.h"
-
-
+@import HandyJSON;
 
 @implementation HYOCManager
 

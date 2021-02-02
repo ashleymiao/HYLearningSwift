@@ -7,134 +7,233 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		094CFDE1EE1D60C2A922F2D98878A1D1 /* HYLearningSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B12542D2C9BC5B80304C37C9DB3A7D /* HYLearningSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D465205A64F537780A5D8971FBC90AE /* HYSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE5E8AA7B29E2ECF39680CECF54B71 /* HYSProtocol.swift */; };
-		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
-		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
-		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
-		16C1B1A4E4AB5DB71E74E5E835566767 /* HYLearningSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 460EBC0F432EE0A58CE963FFB88BAE1C /* HYLearningSwift-dummy.m */; };
-		2C0F8E70DB89E0428D8DFFF0DB6E2B32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
-		38F78D6D861B673351AF356525D71217 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		40B7A65042695E964729012BBB7C05E1 /* HYOCManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2322C890DD7B9F4CD7131032FEB60CFC /* HYOCManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42D5388D8CDAEBC93809A3A8E96BB6FE /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202584F520D29F349C1EB6097D5D91C /* ReplaceMe.swift */; };
+		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = F5097F30FBF469B77CE7800D23F7C6CF /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		025F7C39134F1C593E892E9B8243FC57 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57101CC33996CD272E68EAF42587419E /* NSDecimalNumberTransform.swift */; };
+		03C900C6571224D881FF6C398C687D1D /* CBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F32E3977BA0CC7448492139EF5239 /* CBridge.swift */; };
+		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 331FD25CD8B651490289A37C11D931F9 /* UIApplication+StrictKeyWindow.m */; };
+		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 5247E2A76160857E3E620778EA2DE6DD /* UIImage+Diff.m */; };
+		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB753D7B8B2064A4A4D68DDB6954116 /* QuartzCore.framework */; };
+		18CF74CA7084345FD1816D3C196D7A29 /* OtherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39E0167B75ECD060C640F8B11779D6F /* OtherExtension.swift */; };
+		1BB6C69A232CC899F39D897584F0A023 /* HYSProtocol.sil in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3090BAAFF15A58125BD6FFF14CC06 /* HYSProtocol.sil */; };
+		1F5723131F12EDAFEEB76D66B547B1F0 /* HYLearningSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 460EBC0F432EE0A58CE963FFB88BAE1C /* HYLearningSwift-dummy.m */; };
+		2023D99BC8702A246FBDE09F85B769AB /* ExtendCustomBasicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1732D9D61D978DBE96F6A261081A9 /* ExtendCustomBasicType.swift */; };
+		208C315CF023C6AC9033AE85B9075A56 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280B9EA29DA4BFBA2C857C2D1F5A269B /* HexColorTransform.swift */; };
+		22B5CF7F867541BB2BC8B01715EFB76F /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACFD5A8B7F6D26B48A2B693EB3AC1C1 /* DateTransform.swift */; };
+		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = FE78093252652E5F6A128810EA636AEC /* UIImage+Compare.m */; };
+		38F78D6D861B673351AF356525D71217 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11C825E2BC16C50B91840B33BF61D4C /* Foundation.framework */; };
+		3A9DC6D87922F72DF5D05C8A07EAB5EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11C825E2BC16C50B91840B33BF61D4C /* Foundation.framework */; };
+		3F2633EEAD7A215BED75A594003A3FFD /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896ADB18030EFA332039A0BBC48EAB76 /* ISO8601DateTransform.swift */; };
+		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 86364B1988517B9ADDB83C95076B3CF7 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54812AA5D7828CC3D1CE2D99DAA80D76 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F7E71B43C11908BE500727F64A561 /* URLTransform.swift */; };
 		60855FCDAF309D39BDF0965EFE7154FD /* Pods-HYLearningSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10591F95352E3F0BC7DB4CCE0EFB4F69 /* Pods-HYLearningSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6713DAF16DC276F3FE2D6BC0AB305725 /* Pods-HYLearningSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CD8B6D270326F657F96A5D80606457 /* Pods-HYLearningSwift_Tests-dummy.m */; };
-		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
-		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
-		8380D0C1FC2DE2FD28DB96A240C13C11 /* HYSProtocol.sil in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3090BAAFF15A58125BD6FFF14CC06 /* HYSProtocol.sil */; };
-		882D3C453CF3A5E5532EF80E9D82CFB4 /* HYOCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 943A9457D02D29E3FA86152005AA5BB6 /* HYOCManager.m */; };
-		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
-		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
-		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
-		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
-		B0BF3F9E0C592E5B942A90AF777C2333 /* HYSwiftServiceOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A151C946B5A0672FD9DB4EEDFE09A /* HYSwiftServiceOC.swift */; };
-		B25D795BDC4F426BC01EFC911F368B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		B340095D5D15EEF29CDD38D8B30BB4E5 /* Pods-HYLearningSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E26215634C5E863C121E057B121B499A /* Pods-HYLearningSwift_Example-dummy.m */; };
-		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E0B8D095C732352C854D365B9E5B993D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */; };
-		E500AA9D6CBA1D63EE649CE4A80F3AE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
-		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB67D74515010B27693C49FBFA55B6D4 /* Pods-HYLearningSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0A0DCEC1D7AF9D2A3FBA7B1D3D3902E /* Pods-HYLearningSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6753DF291F8D277E28538AC58C12C3D1 /* FieldDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C608F9EDAEFDC5406F4ABB06E71DC /* FieldDescriptor.swift */; };
+		698BAA747FA487BA05E3D061CBE504E9 /* EnumType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B6ED0C8736EBD1B3BD9210E3B57B1 /* EnumType.swift */; };
+		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF71394B6AD354002A9600DCE2EE078 /* XCTest.framework */; };
+		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEEE8BA7C91A561BE30A8787683A675 /* FBSnapshotTestCase-dummy.m */; };
+		7AFAACE66B56C9E096FDF599E4D0AEF9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5BA662D8388DED3C3584B4B9FBC97 /* Logger.swift */; };
+		7B573E6A29730A46BC7D99946EFCCEB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11C825E2BC16C50B91840B33BF61D4C /* Foundation.framework */; };
+		7C215B57E697C83D8A670C77F719E02A /* BuiltInBasicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3B8D9A0A6BBF8C653EF3A694F2C50 /* BuiltInBasicType.swift */; };
+		7CC988A9393CCE80535051D42B6C42EE /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FF74419ECF312918E205F7071638C /* DateFormatterTransform.swift */; };
+		7EE90F6E0D0BB2819D0D98485B0783D3 /* AnyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B27F1BC7DCD46FEEB9548E30DFAFF95 /* AnyExtensions.swift */; };
+		7F24BFBE8790D710DB9BB10A625DAD5B /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2899121EA77406B708BB7F390FBD697 /* Properties.swift */; };
+		81456639C82274EEDE0898DC2B705218 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A5DD1FF83880B451034B50F9957987 /* DataTransform.swift */; };
+		83399088A705C63BA3E3D35620CD4A31 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03964A03C8DE55AB397A7D0A436391F0 /* TransformType.swift */; };
+		875CD51409510A5BE7E0BCDC6665F50D /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD1A14BBDA88BD3473095C49541ACD /* Metadata.swift */; };
+		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C1B3F4324B26E21287D3A9FDE8D105 /* FBSnapshotTestController.m */; };
+		8A2D1649808717EAD2B73F60506486B1 /* ContextDescriptorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F42EA7CB347CEDB32C87ADEA18DA0 /* ContextDescriptorType.swift */; };
+		8B87ED1B44C9474B100E5CE3E21BEF1A /* HYLearningSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B12542D2C9BC5B80304C37C9DB3A7D /* HYLearningSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 614941565033FADF7647A6CCE2AA5B65 /* FBSnapshotTestCase.m */; };
+		8D7B1DC3390F328FA62D0BDC020A3A0F /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D141D889101286E723CA266B2B7B42 /* HandyJSON.framework */; };
+		8E0751BE0FEF8F185487639478296301 /* Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = F694FCD0B3165CEBF4A85503FF34D3C2 /* Export.swift */; };
+		8E8339CC01537AC3F398546B5B30D988 /* PropertyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4158DF6096D9BBB1C054CA8A9D2F9 /* PropertyInfo.swift */; };
+		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = CF79C895B2A520B99182B162CD33C10D /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB2C5A4CFF08027CE1E0D5B81559C31 /* SwiftSupport.swift */; };
+		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E64E67FC12BC9DBB8457B3A58C385 /* UIImage+Snapshot.m */; };
+		AAC302E4C77D507B0EE3963B0E637113 /* HYOCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 943A9457D02D29E3FA86152005AA5BB6 /* HYOCManager.m */; };
+		B25D795BDC4F426BC01EFC911F368B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11C825E2BC16C50B91840B33BF61D4C /* Foundation.framework */; };
+		B49E2ED164D51A7B84495FF342A3514F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11C825E2BC16C50B91840B33BF61D4C /* Foundation.framework */; };
+		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = B896BA23B4390F244EAF1CAF416C1D96 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B7F73E052317E49BE32DF79C5619DD7A /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E42E7BEE8FD540961495240A5E26D /* CustomDateFormatTransform.swift */; };
+		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 781793E034C53BC9E754160C9CD1EA8F /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C529A4BB403F36D251604BD574401D12 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FAE9BF0322571EB628AEE72329196 /* EnumTransform.swift */; };
+		C5EAC74ECB25821CD7A32442E7F9E42B /* Pods-HYLearningSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E26215634C5E863C121E057B121B499A /* Pods-HYLearningSwift_Example-dummy.m */; };
+		C8F264AFBD7CB67389DE6C57C281F51B /* HelpingMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D48B3B1342C025459139E4658918E /* HelpingMapper.swift */; };
+		CB40E94FBA680F5C035863DE51A0B8C5 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202584F520D29F349C1EB6097D5D91C /* ReplaceMe.swift */; };
+		CC2988DA8833951D6A6859847D988CA4 /* BuiltInBridgeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D2BE4A7C284BF927ADB292C1DCE2B6 /* BuiltInBridgeType.swift */; };
+		CD233DC99B7625CA5D68DD41DEB9419A /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA556D1C5D6B21E3B28930DA6D1F41 /* Deserializer.swift */; };
+		CD535178B30EA70210268351CE1500EC /* HYSwiftServiceOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A151C946B5A0672FD9DB4EEDFE09A /* HYSwiftServiceOC.swift */; };
+		CEB2FCB81457E4918731BDC02123A6FB /* HandyJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 162C59E5A1A8F4DA28AF6C3E48004125 /* HandyJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 857DFDAB086FFA58FA5A334F7E97A5AC /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D3954A18E9B5A6996C4381203D1D357E /* Measuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDFDB6EC821A041235EC54F0708D894 /* Measuable.swift */; };
+		D5881FD455D62FE0E51A1E0193C115C8 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25A0467CDD580EADAE11B9F634C3EC0 /* TransformOf.swift */; };
+		D762818DED5A0E8A98B6209656E39129 /* ExtendCustomModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45A29E10162A419B921E414D4386AE1 /* ExtendCustomModelType.swift */; };
+		DAA9E9DAAD69ED0C15A3FFF25558A7DE /* HandyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA42B1C6E64E3C3881573B4587913FC /* HandyJSON-dummy.m */; };
+		DADAC8CD7170EA47E56D6DEA807769DA /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71894A82AE3088E2474E450C684B20B /* Serializer.swift */; };
+		E0B8D095C732352C854D365B9E5B993D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04939C5E88D201FC2E343BF9B3AF611D /* UIKit.framework */; };
+		E0FFB71EC7A2DEC18382ED9934312CD1 /* HYOCManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2322C890DD7B9F4CD7131032FEB60CFC /* HYOCManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1215F9DA54CF96A205492ED655928EA /* HandyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF11D69737EF17CFC3D377D3367CD1A /* HandyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = E509F95960275719F9175760993A0997 /* FBSnapshotTestCasePlatform.m */; };
+		ED24A48FA237DFBFD99ED2FE897E81D1 /* MangledName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6DF70798328E80A3D8C97C9BD96A4 /* MangledName.swift */; };
+		EE488C6CCA1A6C808EC48A6BF9FA9CE8 /* Transformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ABB5A4F0259C893AFA00503AD5A992 /* Transformable.swift */; };
+		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 2334A9E948A2BF06B77AD1933B2CAC2D /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F552B09202E55A31751FFA8CCAFF43AA /* HYSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE5E8AA7B29E2ECF39680CECF54B71 /* HYSProtocol.swift */; };
+		F6B5DE8398D18B68701C774B32112F48 /* ReflectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4EAEEDEA8070F11C345058F73A4B12 /* ReflectionHelper.swift */; };
+		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82BE0811055141035B66058F7EEB626E /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F86EA247146F4C79B0DAD83FD9C307F7 /* PointerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B444BC5F8E649F8EDAB2B8906162D0B /* PointerType.swift */; };
+		FAC7F4BA258CD76EF1188D20C403FC9F /* Pods-HYLearningSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0A0DCEC1D7AF9D2A3FBA7B1D3D3902E /* Pods-HYLearningSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC6AD655D179AD5A6A28E3B2A93EB877 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC9A9A358EB6F65F16BEDFB8DC1525 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04EA2DD0330E091767F5121940660D84 /* PBXContainerItemProxy */ = {
+		08415F35E17C267C5BCF93F96AEAEDC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
-			remoteInfo = FBSnapshotTestCase;
+			remoteGlobalIDString = 10D88C24864319FF583AD6D156896F32;
+			remoteInfo = HandyJSON;
 		};
-		2EA4D356AB7EF0226330419ECFC768D2 /* PBXContainerItemProxy */ = {
+		0CBCD58745F9A51759F17786FB3CF900 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FB914B4C8515FF221BF68335D9F6BAA0;
-			remoteInfo = "Pods-HYLearningSwift_Example";
+			remoteGlobalIDString = 10D88C24864319FF583AD6D156896F32;
+			remoteInfo = HandyJSON;
 		};
-		9291B7FA8FE881D485E4FE59017A4345 /* PBXContainerItemProxy */ = {
+		1DE835D70F0D01201F2063C1D31055A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 14E0B398489C8CAFCE51BD96CE88D1F7;
 			remoteInfo = HYLearningSwift;
 		};
+		4A3C6F7B8481253A239CAED9A2BDB074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB914B4C8515FF221BF68335D9F6BAA0;
+			remoteInfo = "Pods-HYLearningSwift_Example";
+		};
+		C1ECDC0439D4E515F5983C3FC232F2BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03964A03C8DE55AB397A7D0A436391F0 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Source/TransformType.swift; sourceTree = "<group>"; };
+		04939C5E88D201FC2E343BF9B3AF611D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		0532196132F52627799D16B2EB87BF59 /* Pods-HYLearningSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYLearningSwift_Example-Info.plist"; sourceTree = "<group>"; };
 		075AE73A3CE0C1EA0218AE14BE5A3F7C /* Pods_HYLearningSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HYLearningSwift_Tests.framework; path = "Pods-HYLearningSwift_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		0FF11D69737EF17CFC3D377D3367CD1A /* HandyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HandyJSON-umbrella.h"; sourceTree = "<group>"; };
 		10591F95352E3F0BC7DB4CCE0EFB4F69 /* Pods-HYLearningSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HYLearningSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
 		1202584F520D29F349C1EB6097D5D91C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HYLearningSwift/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		162C59E5A1A8F4DA28AF6C3E48004125 /* HandyJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HandyJSON.h; path = Source/HandyJSON.h; sourceTree = "<group>"; };
+		18145F71CD1767921E5C9124783820E6 /* HandyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HandyJSON.modulemap; sourceTree = "<group>"; };
+		1ACFD5A8B7F6D26B48A2B693EB3AC1C1 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Source/DateTransform.swift; sourceTree = "<group>"; };
 		1AD2DE387FBD4AAB58DFD96689E9EBB9 /* HYLearningSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HYLearningSwift.framework; path = HYLearningSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		1B3393D86412BE98A7F00C5834C59F45 /* HYLearningSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYLearningSwift-prefix.pch"; sourceTree = "<group>"; };
+		1B55A85C4C31685A77739048D5C390D7 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		1D8B6ED0C8736EBD1B3BD9210E3B57B1 /* EnumType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumType.swift; path = Source/EnumType.swift; sourceTree = "<group>"; };
 		20BB20BA5A86F782B299A6DBBB13F08E /* HYLearningSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HYLearningSwift-Info.plist"; sourceTree = "<group>"; };
+		220F32E3977BA0CC7448492139EF5239 /* CBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBridge.swift; path = Source/CBridge.swift; sourceTree = "<group>"; };
 		2322C890DD7B9F4CD7131032FEB60CFC /* HYOCManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYOCManager.h; path = HYLearningSwift/Classes/HYOCManager.h; sourceTree = "<group>"; };
-		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		2334A9E948A2BF06B77AD1933B2CAC2D /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		267772463894CA1FE41E31DE7ED896E3 /* Pods-HYLearningSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYLearningSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		27C1B3F4324B26E21287D3A9FDE8D105 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		280B9EA29DA4BFBA2C857C2D1F5A269B /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Source/HexColorTransform.swift; sourceTree = "<group>"; };
+		29D141D889101286E723CA266B2B7B42 /* HandyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF71394B6AD354002A9600DCE2EE078 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2B444BC5F8E649F8EDAB2B8906162D0B /* PointerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PointerType.swift; path = Source/PointerType.swift; sourceTree = "<group>"; };
+		2EDFDB6EC821A041235EC54F0708D894 /* Measuable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Measuable.swift; path = Source/Measuable.swift; sourceTree = "<group>"; };
+		31A5DD1FF83880B451034B50F9957987 /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Source/DataTransform.swift; sourceTree = "<group>"; };
 		329E127AE8F42CA3357017801C435996 /* Pods-HYLearningSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HYLearningSwift_Example.modulemap"; sourceTree = "<group>"; };
+		331FD25CD8B651490289A37C11D931F9 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		38D4158DF6096D9BBB1C054CA8A9D2F9 /* PropertyInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyInfo.swift; path = Source/PropertyInfo.swift; sourceTree = "<group>"; };
 		3D16CF9F8E7ED7FBAB85E37D9A4CF5B6 /* Pods-HYLearningSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HYLearningSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
-		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		42E5BA662D8388DED3C3584B4B9FBC97 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Logger.swift; sourceTree = "<group>"; };
 		460EBC0F432EE0A58CE963FFB88BAE1C /* HYLearningSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HYLearningSwift-dummy.m"; sourceTree = "<group>"; };
+		474C608F9EDAEFDC5406F4ABB06E71DC /* FieldDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldDescriptor.swift; path = Source/FieldDescriptor.swift; sourceTree = "<group>"; };
 		4B549FA56BBBA748F93F5F9270EC08C1 /* Pods-HYLearningSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYLearningSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		4F2DB6819EF42D876CC9F38CC69E816D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5247E2A76160857E3E620778EA2DE6DD /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		548F7E71B43C11908BE500727F64A561 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Source/URLTransform.swift; sourceTree = "<group>"; };
+		57101CC33996CD272E68EAF42587419E /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Source/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		5B27F1BC7DCD46FEEB9548E30DFAFF95 /* AnyExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyExtensions.swift; path = Source/AnyExtensions.swift; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		5E3FAE9BF0322571EB628AEE72329196 /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Source/EnumTransform.swift; sourceTree = "<group>"; };
+		5EC3B8D9A0A6BBF8C653EF3A694F2C50 /* BuiltInBasicType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BuiltInBasicType.swift; path = Source/BuiltInBasicType.swift; sourceTree = "<group>"; };
+		614941565033FADF7647A6CCE2AA5B65 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		66C678CA228B55BB368265284E0C53FC /* HandyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HandyJSON-Info.plist"; sourceTree = "<group>"; };
+		67F6DF70798328E80A3D8C97C9BD96A4 /* MangledName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MangledName.swift; path = Source/MangledName.swift; sourceTree = "<group>"; };
 		6A590055EE96B7DB24E173B6E467A75E /* Pods-HYLearningSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYLearningSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		6DB753D7B8B2064A4A4D68DDB6954116 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		6F4C8922AA2ED0A0EC69BC96F6ADA1FE /* HandyJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HandyJSON.release.xcconfig; sourceTree = "<group>"; };
+		781793E034C53BC9E754160C9CD1EA8F /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		79CD8B6D270326F657F96A5D80606457 /* Pods-HYLearningSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HYLearningSwift_Tests-dummy.m"; sourceTree = "<group>"; };
-		7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		7A2E42E7BEE8FD540961495240A5E26D /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Source/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		7B23528B64F6C34112D571B487C8B622 /* HandyJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HandyJSON.debug.xcconfig; sourceTree = "<group>"; };
+		7CB2C5A4CFF08027CE1E0D5B81559C31 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		7EC1732D9D61D978DBE96F6A261081A9 /* ExtendCustomBasicType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtendCustomBasicType.swift; path = Source/ExtendCustomBasicType.swift; sourceTree = "<group>"; };
 		7EC3090BAAFF15A58125BD6FFF14CC06 /* HYSProtocol.sil */ = {isa = PBXFileReference; includeInIndex = 1; name = HYSProtocol.sil; path = HYLearningSwift/Classes/HYSProtocol.sil; sourceTree = "<group>"; };
+		7EEEE8BA7C91A561BE30A8787683A675 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		803F04E3D61F258DC69766599AC05EBE /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		82BE0811055141035B66058F7EEB626E /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		857DFDAB086FFA58FA5A334F7E97A5AC /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		86364B1988517B9ADDB83C95076B3CF7 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		87E4C64135FBDF7EB3CA10CB209B4D3D /* Pods-HYLearningSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYLearningSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		896ADB18030EFA332039A0BBC48EAB76 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Source/ISO8601DateTransform.swift; sourceTree = "<group>"; };
 		8B7CF2A500F61054C5C491092D57F396 /* Pods-HYLearningSwift_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HYLearningSwift_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		8F23722122F303F491AE73F8AA40F87E /* Pods-HYLearningSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYLearningSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9127A9D3EDFF2E26374DE8B55ABE013A /* HYLearningSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYLearningSwift.release.xcconfig; sourceTree = "<group>"; };
 		92A78A02D0BEFDDAC25E988E2D66D0D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		943A9457D02D29E3FA86152005AA5BB6 /* HYOCManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYOCManager.m; path = HYLearningSwift/Classes/HYOCManager.m; sourceTree = "<group>"; };
-		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
-		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		981CA37407C22B2719033D13F490A79A /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A12FF74419ECF312918E205F7071638C /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Source/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		A2D2BE4A7C284BF927ADB292C1DCE2B6 /* BuiltInBridgeType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BuiltInBridgeType.swift; path = Source/BuiltInBridgeType.swift; sourceTree = "<group>"; };
+		A30D48B3B1342C025459139E4658918E /* HelpingMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HelpingMapper.swift; path = Source/HelpingMapper.swift; sourceTree = "<group>"; };
+		A6730762ABBB096DCA31133B2205B05A /* HandyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HandyJSON-prefix.pch"; sourceTree = "<group>"; };
 		AA4FB9041CA2D376CF06FFCC87E47E87 /* Pods-HYLearningSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HYLearningSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AAEE5E8AA7B29E2ECF39680CECF54B71 /* HYSProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HYSProtocol.swift; path = HYLearningSwift/Classes/HYSProtocol.swift; sourceTree = "<group>"; };
-		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		AF2C98E719A5A6F85361ECCC6E87043C /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		B0153EF1ECEE2CBA32DBD8282850E2F2 /* HYLearningSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYLearningSwift.debug.xcconfig; sourceTree = "<group>"; };
-		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		B2899121EA77406B708BB7F390FBD697 /* Properties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Properties.swift; path = Source/Properties.swift; sourceTree = "<group>"; };
+		B39E0167B75ECD060C640F8B11779D6F /* OtherExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OtherExtension.swift; path = Source/OtherExtension.swift; sourceTree = "<group>"; };
+		B60E64E67FC12BC9DBB8457B3A58C385 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		B7B12542D2C9BC5B80304C37C9DB3A7D /* HYLearningSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYLearningSwift-umbrella.h"; sourceTree = "<group>"; };
+		B896BA23B4390F244EAF1CAF416C1D96 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		BC0F42EA7CB347CEDB32C87ADEA18DA0 /* ContextDescriptorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextDescriptorType.swift; path = Source/ContextDescriptorType.swift; sourceTree = "<group>"; };
 		BE5A151C946B5A0672FD9DB4EEDFE09A /* HYSwiftServiceOC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HYSwiftServiceOC.swift; path = HYLearningSwift/Classes/HYSwiftServiceOC.swift; sourceTree = "<group>"; };
 		BEBCAE55DFE5E3B6810A04248A86977E /* Pods-HYLearningSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HYLearningSwift_Tests.modulemap"; sourceTree = "<group>"; };
-		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		C11C825E2BC16C50B91840B33BF61D4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C1EA556D1C5D6B21E3B28930DA6D1F41 /* Deserializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deserializer.swift; path = Source/Deserializer.swift; sourceTree = "<group>"; };
+		CD54121DDA84872534168702B5F92950 /* HandyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HandyJSON.framework; path = HandyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4EAEEDEA8070F11C345058F73A4B12 /* ReflectionHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReflectionHelper.swift; path = Source/ReflectionHelper.swift; sourceTree = "<group>"; };
+		CE8B292921EF409DCC86ACF91422B400 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
+		CF79C895B2A520B99182B162CD33C10D /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		CFAC9A9A358EB6F65F16BEDFB8DC1525 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Source/Configuration.swift; sourceTree = "<group>"; };
 		D0621F2702E52401343DDF2373C4B208 /* Pods_HYLearningSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HYLearningSwift_Example.framework; path = "Pods-HYLearningSwift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		D25A0467CDD580EADAE11B9F634C3EC0 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Source/TransformOf.swift; sourceTree = "<group>"; };
 		D320F2E1C007DBD27CE6B0675602BF5A /* HYLearningSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HYLearningSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		D45A29E10162A419B921E414D4386AE1 /* ExtendCustomModelType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtendCustomModelType.swift; path = Source/ExtendCustomModelType.swift; sourceTree = "<group>"; };
+		D4ABB5A4F0259C893AFA00503AD5A992 /* Transformable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformable.swift; path = Source/Transformable.swift; sourceTree = "<group>"; };
 		D8B4683FFC5DF65C3E7353E3D09E98E9 /* Pods-HYLearningSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYLearningSwift_Tests-Info.plist"; sourceTree = "<group>"; };
 		D956D665550FA73E4A761D5A0A1B9453 /* Pods-HYLearningSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYLearningSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBBD1A14BBDA88BD3473095C49541ACD /* Metadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Metadata.swift; path = Source/Metadata.swift; sourceTree = "<group>"; };
 		E26215634C5E863C121E057B121B499A /* Pods-HYLearningSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HYLearningSwift_Example-dummy.m"; sourceTree = "<group>"; };
+		E509F95960275719F9175760993A0997 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		E71894A82AE3088E2474E450C684B20B /* Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Serializer.swift; path = Source/Serializer.swift; sourceTree = "<group>"; };
 		EB1A8A56C406BBC108953E76AF867727 /* Pods-HYLearningSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HYLearningSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		EDA42B1C6E64E3C3881573B4587913FC /* HandyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HandyJSON-dummy.m"; sourceTree = "<group>"; };
 		F0A0DCEC1D7AF9D2A3FBA7B1D3D3902E /* Pods-HYLearningSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HYLearningSwift_Example-umbrella.h"; sourceTree = "<group>"; };
+		F5097F30FBF469B77CE7800D23F7C6CF /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		F694FCD0B3165CEBF4A85503FF34D3C2 /* Export.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Export.swift; path = Source/Export.swift; sourceTree = "<group>"; };
 		F8FBC29CE69B777029DBA1B87C80FF60 /* HYLearningSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HYLearningSwift.modulemap; sourceTree = "<group>"; };
-		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		FE78093252652E5F6A128810EA636AEC /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,19 +245,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66E1FFF7575C492B1FDB617059B99BD8 /* Frameworks */ = {
+		3253BB33C5012E84EE8BE4A3F0A98848 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C0F8E70DB89E0428D8DFFF0DB6E2B32 /* Foundation.framework in Frameworks */,
+				3A9DC6D87922F72DF5D05C8A07EAB5EC /* Foundation.framework in Frameworks */,
+				8D7B1DC3390F328FA62D0BDC020A3A0F /* HandyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EA34765C949C1B9E0F44D293DF117BC /* Frameworks */ = {
+		955DCDF165963EDDE103A6B3B2FC5B3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E500AA9D6CBA1D63EE649CE4A80F3AE4 /* Foundation.framework in Frameworks */,
+				7B573E6A29730A46BC7D99946EFCCEB6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,9 +273,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED993C2E70CE1780A8F1175CA3AC47AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49E2ED164D51A7B84495FF342A3514F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AEFF94C825912FE626E89C772C77E9B /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				5374D54B20086582F86F33D2D0143E23 /* Core */,
+				BF81A3E51247F73C06F2768111490C68 /* Support Files */,
+				BF53A2D2257A2B88EED2CDC09FF64D2B /* SwiftSupport */,
+			);
+			name = FBSnapshotTestCase;
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		3136CF15E43298A6E0C546505279FECC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AEFF94C825912FE626E89C772C77E9B /* FBSnapshotTestCase */,
+				C4ADBC30DFB9BD248B912ADCB93E1375 /* HandyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		320A94EF22741813C816D2626D831F2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29D141D889101286E723CA266B2B7B42 /* HandyJSON.framework */,
+				6AFCF038A4BF9C5E1A433F4EC5A970A6 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		393F4A75ED8DCFC4A75C808906F31A95 /* Pods-HYLearningSwift_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,44 +330,51 @@
 			path = "Target Support Files/Pods-HYLearningSwift_Tests";
 			sourceTree = "<group>";
 		};
-		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
+		5374D54B20086582F86F33D2D0143E23 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */,
-				277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */,
-				88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */,
-				6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */,
-				AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */,
-				7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */,
-				99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */,
-				0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */,
-				656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */,
-				235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */,
-				96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */,
-				4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */,
-				284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */,
-				D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */,
+				F5097F30FBF469B77CE7800D23F7C6CF /* FBSnapshotTestCase.h */,
+				614941565033FADF7647A6CCE2AA5B65 /* FBSnapshotTestCase.m */,
+				781793E034C53BC9E754160C9CD1EA8F /* FBSnapshotTestCasePlatform.h */,
+				E509F95960275719F9175760993A0997 /* FBSnapshotTestCasePlatform.m */,
+				CF79C895B2A520B99182B162CD33C10D /* FBSnapshotTestController.h */,
+				27C1B3F4324B26E21287D3A9FDE8D105 /* FBSnapshotTestController.m */,
+				86364B1988517B9ADDB83C95076B3CF7 /* UIApplication+StrictKeyWindow.h */,
+				331FD25CD8B651490289A37C11D931F9 /* UIApplication+StrictKeyWindow.m */,
+				2334A9E948A2BF06B77AD1933B2CAC2D /* UIImage+Compare.h */,
+				FE78093252652E5F6A128810EA636AEC /* UIImage+Compare.m */,
+				857DFDAB086FFA58FA5A334F7E97A5AC /* UIImage+Diff.h */,
+				5247E2A76160857E3E620778EA2DE6DD /* UIImage+Diff.m */,
+				B896BA23B4390F244EAF1CAF416C1D96 /* UIImage+Snapshot.h */,
+				B60E64E67FC12BC9DBB8457B3A58C385 /* UIImage+Snapshot.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
 		};
-		7DE5752EED0A4C4A430975244947611A /* iOS */ = {
+		551354ECF71DC354E7F835F5EF5A41B6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */,
-				716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */,
-				8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */,
-				5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */,
+				18145F71CD1767921E5C9124783820E6 /* HandyJSON.modulemap */,
+				EDA42B1C6E64E3C3881573B4587913FC /* HandyJSON-dummy.m */,
+				66C678CA228B55BB368265284E0C53FC /* HandyJSON-Info.plist */,
+				A6730762ABBB096DCA31133B2205B05A /* HandyJSON-prefix.pch */,
+				0FF11D69737EF17CFC3D377D3367CD1A /* HandyJSON-umbrella.h */,
+				7B23528B64F6C34112D571B487C8B622 /* HandyJSON.debug.xcconfig */,
+				6F4C8922AA2ED0A0EC69BC96F6ADA1FE /* HandyJSON.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/HandyJSON";
 			sourceTree = "<group>";
 		};
-		906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */ = {
+		6AFCF038A4BF9C5E1A433F4EC5A970A6 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */,
+				C11C825E2BC16C50B91840B33BF61D4C /* Foundation.framework */,
+				6DB753D7B8B2064A4A4D68DDB6954116 /* QuartzCore.framework */,
+				04939C5E88D201FC2E343BF9B3AF611D /* UIKit.framework */,
+				2AF71394B6AD354002A9600DCE2EE078 /* XCTest.framework */,
 			);
-			name = SwiftSupport;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		9C964A669391AEB19801D954731318B5 /* Development Pods */ = {
@@ -258,38 +402,84 @@
 			path = "Target Support Files/Pods-HYLearningSwift_Example";
 			sourceTree = "<group>";
 		};
-		B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */ = {
+		BF53A2D2257A2B88EED2CDC09FF64D2B /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
-				CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */,
-				1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */,
-				B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */,
-				D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */,
-				8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */,
-				9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */,
-				4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */,
+				7CB2C5A4CFF08027CE1E0D5B81559C31 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		BF81A3E51247F73C06F2768111490C68 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B55A85C4C31685A77739048D5C390D7 /* FBSnapshotTestCase.modulemap */,
+				7EEEE8BA7C91A561BE30A8787683A675 /* FBSnapshotTestCase-dummy.m */,
+				803F04E3D61F258DC69766599AC05EBE /* FBSnapshotTestCase-Info.plist */,
+				AF2C98E719A5A6F85361ECCC6E87043C /* FBSnapshotTestCase-prefix.pch */,
+				82BE0811055141035B66058F7EEB626E /* FBSnapshotTestCase-umbrella.h */,
+				CE8B292921EF409DCC86ACF91422B400 /* FBSnapshotTestCase.debug.xcconfig */,
+				981CA37407C22B2719033D13F490A79A /* FBSnapshotTestCase.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FBSnapshotTestCase";
 			sourceTree = "<group>";
 		};
-		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+		C38E470C9A09781BCDFCBACCC46B903A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7DE5752EED0A4C4A430975244947611A /* iOS */,
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
+				CD54121DDA84872534168702B5F92950 /* HandyJSON.framework */,
+				1AD2DE387FBD4AAB58DFD96689E9EBB9 /* HYLearningSwift.framework */,
+				D0621F2702E52401343DDF2373C4B208 /* Pods_HYLearningSwift_Example.framework */,
+				075AE73A3CE0C1EA0218AE14BE5A3F7C /* Pods_HYLearningSwift_Tests.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */ = {
+		C4ADBC30DFB9BD248B912ADCB93E1375 /* HandyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				4BA2479549DD918290454B1CDCD0B92B /* Core */,
-				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
-				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
+				5B27F1BC7DCD46FEEB9548E30DFAFF95 /* AnyExtensions.swift */,
+				5EC3B8D9A0A6BBF8C653EF3A694F2C50 /* BuiltInBasicType.swift */,
+				A2D2BE4A7C284BF927ADB292C1DCE2B6 /* BuiltInBridgeType.swift */,
+				220F32E3977BA0CC7448492139EF5239 /* CBridge.swift */,
+				CFAC9A9A358EB6F65F16BEDFB8DC1525 /* Configuration.swift */,
+				BC0F42EA7CB347CEDB32C87ADEA18DA0 /* ContextDescriptorType.swift */,
+				7A2E42E7BEE8FD540961495240A5E26D /* CustomDateFormatTransform.swift */,
+				31A5DD1FF83880B451034B50F9957987 /* DataTransform.swift */,
+				A12FF74419ECF312918E205F7071638C /* DateFormatterTransform.swift */,
+				1ACFD5A8B7F6D26B48A2B693EB3AC1C1 /* DateTransform.swift */,
+				C1EA556D1C5D6B21E3B28930DA6D1F41 /* Deserializer.swift */,
+				5E3FAE9BF0322571EB628AEE72329196 /* EnumTransform.swift */,
+				1D8B6ED0C8736EBD1B3BD9210E3B57B1 /* EnumType.swift */,
+				F694FCD0B3165CEBF4A85503FF34D3C2 /* Export.swift */,
+				7EC1732D9D61D978DBE96F6A261081A9 /* ExtendCustomBasicType.swift */,
+				D45A29E10162A419B921E414D4386AE1 /* ExtendCustomModelType.swift */,
+				474C608F9EDAEFDC5406F4ABB06E71DC /* FieldDescriptor.swift */,
+				162C59E5A1A8F4DA28AF6C3E48004125 /* HandyJSON.h */,
+				A30D48B3B1342C025459139E4658918E /* HelpingMapper.swift */,
+				280B9EA29DA4BFBA2C857C2D1F5A269B /* HexColorTransform.swift */,
+				896ADB18030EFA332039A0BBC48EAB76 /* ISO8601DateTransform.swift */,
+				42E5BA662D8388DED3C3584B4B9FBC97 /* Logger.swift */,
+				67F6DF70798328E80A3D8C97C9BD96A4 /* MangledName.swift */,
+				2EDFDB6EC821A041235EC54F0708D894 /* Measuable.swift */,
+				DBBD1A14BBDA88BD3473095C49541ACD /* Metadata.swift */,
+				57101CC33996CD272E68EAF42587419E /* NSDecimalNumberTransform.swift */,
+				B39E0167B75ECD060C640F8B11779D6F /* OtherExtension.swift */,
+				2B444BC5F8E649F8EDAB2B8906162D0B /* PointerType.swift */,
+				B2899121EA77406B708BB7F390FBD697 /* Properties.swift */,
+				38D4158DF6096D9BBB1C054CA8A9D2F9 /* PropertyInfo.swift */,
+				CE4EAEEDEA8070F11C345058F73A4B12 /* ReflectionHelper.swift */,
+				E71894A82AE3088E2474E450C684B20B /* Serializer.swift */,
+				D4ABB5A4F0259C893AFA00503AD5A992 /* Transformable.swift */,
+				D25A0467CDD580EADAE11B9F634C3EC0 /* TransformOf.swift */,
+				03964A03C8DE55AB397A7D0A436391F0 /* TransformType.swift */,
+				548F7E71B43C11908BE500727F64A561 /* URLTransform.swift */,
+				551354ECF71DC354E7F835F5EF5A41B6 /* Support Files */,
 			);
-			name = FBSnapshotTestCase;
-			path = FBSnapshotTestCase;
+			name = HandyJSON;
+			path = HandyJSON;
 			sourceTree = "<group>";
 		};
 		C641982A663BB368F5E7FF82FB0177A2 /* Support Files */ = {
@@ -328,9 +518,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				9C964A669391AEB19801D954731318B5 /* Development Pods */,
-				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
-				E81A37DBDE41E671312C56736544E2FA /* Pods */,
-				F443EEC91A2BCCB7CFDBE11F8483065B /* Products */,
+				320A94EF22741813C816D2626D831F2A /* Frameworks */,
+				3136CF15E43298A6E0C546505279FECC /* Pods */,
+				C38E470C9A09781BCDFCBACCC46B903A /* Products */,
 				E418BE65D2CB46B5B9069062195DE99F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -354,25 +544,6 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F443EEC91A2BCCB7CFDBE11F8483065B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
-				1AD2DE387FBD4AAB58DFD96689E9EBB9 /* HYLearningSwift.framework */,
-				D0621F2702E52401343DDF2373C4B208 /* Pods_HYLearningSwift_Example.framework */,
-				075AE73A3CE0C1EA0218AE14BE5A3F7C /* Pods_HYLearningSwift_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -391,6 +562,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47E4A428D3F11A3318AA8C649922021B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1215F9DA54CF96A205492ED655928EA /* HandyJSON-umbrella.h in Headers */,
+				CEB2FCB81457E4918731BDC02123A6FB /* HandyJSON.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6C68269C79AD908EFCEC702BBFC4BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B87ED1B44C9474B100E5CE3E21BEF1A /* HYLearningSwift-umbrella.h in Headers */,
+				E0FFB71EC7A2DEC18382ED9934312CD1 /* HYOCManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		772AAFBCD789B66594AED450BDCA4927 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,38 +588,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B501F9635536BD8481BFF35F734C6A2D /* Headers */ = {
+		81A1A63540014FAFB0B7E8070090B916 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB67D74515010B27693C49FBFA55B6D4 /* Pods-HYLearningSwift_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7EECEB9E8981D0DDA0B73832AD73357 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				094CFDE1EE1D60C2A922F2D98878A1D1 /* HYLearningSwift-umbrella.h in Headers */,
-				40B7A65042695E964729012BBB7C05E1 /* HYOCManager.h in Headers */,
+				FAC7F4BA258CD76EF1188D20C403FC9F /* Pods-HYLearningSwift_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14E0B398489C8CAFCE51BD96CE88D1F7 /* HYLearningSwift */ = {
+		10D88C24864319FF583AD6D156896F32 /* HandyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D30627E040646F959312927E858E03AC /* Build configuration list for PBXNativeTarget "HYLearningSwift" */;
+			buildConfigurationList = 35335EEAE8DDB69EB52B1A20A17B26BA /* Build configuration list for PBXNativeTarget "HandyJSON" */;
 			buildPhases = (
-				C7EECEB9E8981D0DDA0B73832AD73357 /* Headers */,
-				437B25AF76829A0ECEFC73E2CC10F703 /* Sources */,
-				66E1FFF7575C492B1FDB617059B99BD8 /* Frameworks */,
-				FE1F264179DD074FF82628F2511D1121 /* Resources */,
+				47E4A428D3F11A3318AA8C649922021B /* Headers */,
+				FFF169E2363B35423AC60290D789B260 /* Sources */,
+				955DCDF165963EDDE103A6B3B2FC5B3A /* Frameworks */,
+				DE9F37E7478F77C07FF2F6FBAA6B8FEA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = HandyJSON;
+			productName = HandyJSON;
+			productReference = CD54121DDA84872534168702B5F92950 /* HandyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		14E0B398489C8CAFCE51BD96CE88D1F7 /* HYLearningSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B54E2658C522D14F673E30F19A0AFF3 /* Build configuration list for PBXNativeTarget "HYLearningSwift" */;
+			buildPhases = (
+				5F6C68269C79AD908EFCEC702BBFC4BE /* Headers */,
+				EE20C01E0464D8B9348D139755EF2C02 /* Sources */,
+				3253BB33C5012E84EE8BE4A3F0A98848 /* Frameworks */,
+				C38B86F978883D0E921AD99228C6B623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F983EFB1A71451C32B3C7C72454D639 /* PBXTargetDependency */,
 			);
 			name = HYLearningSwift;
 			productName = HYLearningSwift;
@@ -467,8 +666,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				618F7E54B8C18C527DA59CC6046578CD /* PBXTargetDependency */,
-				4A7AFCD663696A0F01768FE9C8C98C8C /* PBXTargetDependency */,
+				A8828D7A33C0473A8A755B62E3AF2502 /* PBXTargetDependency */,
+				7557760EE85E8FF58AF1BEEB5785FAB0 /* PBXTargetDependency */,
 			);
 			name = "Pods-HYLearningSwift_Tests";
 			productName = "Pods-HYLearningSwift_Tests";
@@ -477,17 +676,18 @@
 		};
 		FB914B4C8515FF221BF68335D9F6BAA0 /* Pods-HYLearningSwift_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DDB179B23C7FE447203AAE73C6C1A9C /* Build configuration list for PBXNativeTarget "Pods-HYLearningSwift_Example" */;
+			buildConfigurationList = 2A357AE41E06E570DC03CB27AFEBE5F5 /* Build configuration list for PBXNativeTarget "Pods-HYLearningSwift_Example" */;
 			buildPhases = (
-				B501F9635536BD8481BFF35F734C6A2D /* Headers */,
-				E2536DFCA3A08948A74941190DBF04B5 /* Sources */,
-				9EA34765C949C1B9E0F44D293DF117BC /* Frameworks */,
-				957969C3EA49CD82FC6862393285E511 /* Resources */,
+				81A1A63540014FAFB0B7E8070090B916 /* Headers */,
+				031689457D8D06AF2479916EBF3C390D /* Sources */,
+				ED993C2E70CE1780A8F1175CA3AC47AC /* Frameworks */,
+				1CED6A424EC5BEA61FE530F8ECC6DE53 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8CD67335A57B325831AAC1E10DE73624 /* PBXTargetDependency */,
+				B06E06AD37679303D986C80C3A5D0AE8 /* PBXTargetDependency */,
+				34AC1AA6347AB56C461B930BC812D505 /* PBXTargetDependency */,
 			);
 			name = "Pods-HYLearningSwift_Example";
 			productName = "Pods-HYLearningSwift_Example";
@@ -512,11 +712,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F443EEC91A2BCCB7CFDBE11F8483065B /* Products */;
+			productRefGroup = C38E470C9A09781BCDFCBACCC46B903A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */,
+				10D88C24864319FF583AD6D156896F32 /* HandyJSON */,
 				14E0B398489C8CAFCE51BD96CE88D1F7 /* HYLearningSwift */,
 				FB914B4C8515FF221BF68335D9F6BAA0 /* Pods-HYLearningSwift_Example */,
 				ED148862842E3562B6974E3E37EE7CC5 /* Pods-HYLearningSwift_Tests */,
@@ -525,6 +726,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1CED6A424EC5BEA61FE530F8ECC6DE53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CC655F1A6C7A45A9693160581076BAE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -539,14 +747,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		957969C3EA49CD82FC6862393285E511 /* Resources */ = {
+		C38B86F978883D0E921AD99228C6B623 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE1F264179DD074FF82628F2511D1121 /* Resources */ = {
+		DE9F37E7478F77C07FF2F6FBAA6B8FEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -556,16 +764,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		437B25AF76829A0ECEFC73E2CC10F703 /* Sources */ = {
+		031689457D8D06AF2479916EBF3C390D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16C1B1A4E4AB5DB71E74E5E835566767 /* HYLearningSwift-dummy.m in Sources */,
-				882D3C453CF3A5E5532EF80E9D82CFB4 /* HYOCManager.m in Sources */,
-				8380D0C1FC2DE2FD28DB96A240C13C11 /* HYSProtocol.sil in Sources */,
-				0D465205A64F537780A5D8971FBC90AE /* HYSProtocol.swift in Sources */,
-				B0BF3F9E0C592E5B942A90AF777C2333 /* HYSwiftServiceOC.swift in Sources */,
-				42D5388D8CDAEBC93809A3A8E96BB6FE /* ReplaceMe.swift in Sources */,
+				C5EAC74ECB25821CD7A32442E7F9E42B /* Pods-HYLearningSwift_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,39 +796,162 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2536DFCA3A08948A74941190DBF04B5 /* Sources */ = {
+		EE20C01E0464D8B9348D139755EF2C02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B340095D5D15EEF29CDD38D8B30BB4E5 /* Pods-HYLearningSwift_Example-dummy.m in Sources */,
+				1F5723131F12EDAFEEB76D66B547B1F0 /* HYLearningSwift-dummy.m in Sources */,
+				AAC302E4C77D507B0EE3963B0E637113 /* HYOCManager.m in Sources */,
+				1BB6C69A232CC899F39D897584F0A023 /* HYSProtocol.sil in Sources */,
+				F552B09202E55A31751FFA8CCAFF43AA /* HYSProtocol.swift in Sources */,
+				CD535178B30EA70210268351CE1500EC /* HYSwiftServiceOC.swift in Sources */,
+				CB40E94FBA680F5C035863DE51A0B8C5 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF169E2363B35423AC60290D789B260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EE90F6E0D0BB2819D0D98485B0783D3 /* AnyExtensions.swift in Sources */,
+				7C215B57E697C83D8A670C77F719E02A /* BuiltInBasicType.swift in Sources */,
+				CC2988DA8833951D6A6859847D988CA4 /* BuiltInBridgeType.swift in Sources */,
+				03C900C6571224D881FF6C398C687D1D /* CBridge.swift in Sources */,
+				FC6AD655D179AD5A6A28E3B2A93EB877 /* Configuration.swift in Sources */,
+				8A2D1649808717EAD2B73F60506486B1 /* ContextDescriptorType.swift in Sources */,
+				B7F73E052317E49BE32DF79C5619DD7A /* CustomDateFormatTransform.swift in Sources */,
+				81456639C82274EEDE0898DC2B705218 /* DataTransform.swift in Sources */,
+				7CC988A9393CCE80535051D42B6C42EE /* DateFormatterTransform.swift in Sources */,
+				22B5CF7F867541BB2BC8B01715EFB76F /* DateTransform.swift in Sources */,
+				CD233DC99B7625CA5D68DD41DEB9419A /* Deserializer.swift in Sources */,
+				C529A4BB403F36D251604BD574401D12 /* EnumTransform.swift in Sources */,
+				698BAA747FA487BA05E3D061CBE504E9 /* EnumType.swift in Sources */,
+				8E0751BE0FEF8F185487639478296301 /* Export.swift in Sources */,
+				2023D99BC8702A246FBDE09F85B769AB /* ExtendCustomBasicType.swift in Sources */,
+				D762818DED5A0E8A98B6209656E39129 /* ExtendCustomModelType.swift in Sources */,
+				6753DF291F8D277E28538AC58C12C3D1 /* FieldDescriptor.swift in Sources */,
+				DAA9E9DAAD69ED0C15A3FFF25558A7DE /* HandyJSON-dummy.m in Sources */,
+				C8F264AFBD7CB67389DE6C57C281F51B /* HelpingMapper.swift in Sources */,
+				208C315CF023C6AC9033AE85B9075A56 /* HexColorTransform.swift in Sources */,
+				3F2633EEAD7A215BED75A594003A3FFD /* ISO8601DateTransform.swift in Sources */,
+				7AFAACE66B56C9E096FDF599E4D0AEF9 /* Logger.swift in Sources */,
+				ED24A48FA237DFBFD99ED2FE897E81D1 /* MangledName.swift in Sources */,
+				D3954A18E9B5A6996C4381203D1D357E /* Measuable.swift in Sources */,
+				875CD51409510A5BE7E0BCDC6665F50D /* Metadata.swift in Sources */,
+				025F7C39134F1C593E892E9B8243FC57 /* NSDecimalNumberTransform.swift in Sources */,
+				18CF74CA7084345FD1816D3C196D7A29 /* OtherExtension.swift in Sources */,
+				F86EA247146F4C79B0DAD83FD9C307F7 /* PointerType.swift in Sources */,
+				7F24BFBE8790D710DB9BB10A625DAD5B /* Properties.swift in Sources */,
+				8E8339CC01537AC3F398546B5B30D988 /* PropertyInfo.swift in Sources */,
+				F6B5DE8398D18B68701C774B32112F48 /* ReflectionHelper.swift in Sources */,
+				DADAC8CD7170EA47E56D6DEA807769DA /* Serializer.swift in Sources */,
+				EE488C6CCA1A6C808EC48A6BF9FA9CE8 /* Transformable.swift in Sources */,
+				D5881FD455D62FE0E51A1E0193C115C8 /* TransformOf.swift in Sources */,
+				83399088A705C63BA3E3D35620CD4A31 /* TransformType.swift in Sources */,
+				54812AA5D7828CC3D1CE2D99DAA80D76 /* URLTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4A7AFCD663696A0F01768FE9C8C98C8C /* PBXTargetDependency */ = {
+		34AC1AA6347AB56C461B930BC812D505 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HandyJSON;
+			target = 10D88C24864319FF583AD6D156896F32 /* HandyJSON */;
+			targetProxy = 08415F35E17C267C5BCF93F96AEAEDC1 /* PBXContainerItemProxy */;
+		};
+		7557760EE85E8FF58AF1BEEB5785FAB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-HYLearningSwift_Example";
 			target = FB914B4C8515FF221BF68335D9F6BAA0 /* Pods-HYLearningSwift_Example */;
-			targetProxy = 2EA4D356AB7EF0226330419ECFC768D2 /* PBXContainerItemProxy */;
+			targetProxy = 4A3C6F7B8481253A239CAED9A2BDB074 /* PBXContainerItemProxy */;
 		};
-		618F7E54B8C18C527DA59CC6046578CD /* PBXTargetDependency */ = {
+		7F983EFB1A71451C32B3C7C72454D639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HandyJSON;
+			target = 10D88C24864319FF583AD6D156896F32 /* HandyJSON */;
+			targetProxy = 0CBCD58745F9A51759F17786FB3CF900 /* PBXContainerItemProxy */;
+		};
+		A8828D7A33C0473A8A755B62E3AF2502 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBSnapshotTestCase;
 			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 04EA2DD0330E091767F5121940660D84 /* PBXContainerItemProxy */;
+			targetProxy = C1ECDC0439D4E515F5983C3FC232F2BC /* PBXContainerItemProxy */;
 		};
-		8CD67335A57B325831AAC1E10DE73624 /* PBXTargetDependency */ = {
+		B06E06AD37679303D986C80C3A5D0AE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HYLearningSwift;
 			target = 14E0B398489C8CAFCE51BD96CE88D1F7 /* HYLearningSwift */;
-			targetProxy = 9291B7FA8FE881D485E4FE59017A4345 /* PBXContainerItemProxy */;
+			targetProxy = 1DE835D70F0D01201F2063C1D31055A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		37BAB9FFCB999DB46A15A8063B0C3FA4 /* Debug */ = {
+		0C337D0791B8FC6B47E9F90E22C7837C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0153EF1ECEE2CBA32DBD8282850E2F2 /* HYLearningSwift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HYLearningSwift/HYLearningSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift.modulemap";
+				PRODUCT_MODULE_NAME = HYLearningSwift;
+				PRODUCT_NAME = HYLearningSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1C0174A2DBDF03A29015516054B0D31D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9127A9D3EDFF2E26374DE8B55ABE013A /* HYLearningSwift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HYLearningSwift/HYLearningSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift.modulemap";
+				PRODUCT_MODULE_NAME = HYLearningSwift;
+				PRODUCT_NAME = HYLearningSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1EC34E4333363CD8D570E77F430C0A08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B549FA56BBBA748F93F5F9270EC08C1 /* Pods-HYLearningSwift_Example.debug.xcconfig */;
 			buildSettings = {
@@ -660,7 +986,7 @@
 		};
 		441C7939108738A0C7CD37CBADE0B85E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */;
+			baseConfigurationReference = CE8B292921EF409DCC86ACF91422B400 /* FBSnapshotTestCase.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -716,6 +1042,36 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		808EE865F58837A68463EA63A1454A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B23528B64F6C34112D571B487C8B622 /* HandyJSON.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HandyJSON/HandyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HandyJSON/HandyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HandyJSON/HandyJSON.modulemap";
+				PRODUCT_MODULE_NAME = HandyJSON;
+				PRODUCT_NAME = HandyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -846,11 +1202,10 @@
 			};
 			name = Debug;
 		};
-		91B4D7D4752EFCC63037710653C669E4 /* Release */ = {
+		AA47880128C8F0C5E132D2BF574B4C70 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F23722122F303F491AE73F8AA40F87E /* Pods-HYLearningSwift_Example.release.xcconfig */;
+			baseConfigurationReference = 6F4C8922AA2ED0A0EC69BC96F6ADA1FE /* HandyJSON.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -860,19 +1215,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HYLearningSwift_Example/Pods-HYLearningSwift_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HandyJSON/HandyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HandyJSON/HandyJSON-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HYLearningSwift_Example/Pods-HYLearningSwift_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/HandyJSON/HandyJSON.modulemap";
+				PRODUCT_MODULE_NAME = HandyJSON;
+				PRODUCT_NAME = HandyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -882,7 +1235,7 @@
 		};
 		BE874B114A0991701B09229EAAA4CA84 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */;
+			baseConfigurationReference = 981CA37407C22B2719033D13F490A79A /* FBSnapshotTestCase.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -911,37 +1264,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		C98A1BA09D94ED7D6670641C424F1367 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0153EF1ECEE2CBA32DBD8282850E2F2 /* HYLearningSwift.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HYLearningSwift/HYLearningSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift.modulemap";
-				PRODUCT_MODULE_NAME = HYLearningSwift;
-				PRODUCT_NAME = HYLearningSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		D85FDC21C2F845FFA94FCDE9E7D871D7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -977,10 +1299,11 @@
 			};
 			name = Release;
 		};
-		DB7E50289B25D6A87B908D8166ADD747 /* Release */ = {
+		F17B2E2C2EB9174C423D4FDCCA08315E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9127A9D3EDFF2E26374DE8B55ABE013A /* HYLearningSwift.release.xcconfig */;
+			baseConfigurationReference = 8F23722122F303F491AE73F8AA40F87E /* Pods-HYLearningSwift_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -990,18 +1313,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HYLearningSwift/HYLearningSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-HYLearningSwift_Example/Pods-HYLearningSwift_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift.modulemap";
-				PRODUCT_MODULE_NAME = HYLearningSwift;
-				PRODUCT_NAME = HYLearningSwift;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HYLearningSwift_Example/Pods-HYLearningSwift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1012,11 +1336,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DDB179B23C7FE447203AAE73C6C1A9C /* Build configuration list for PBXNativeTarget "Pods-HYLearningSwift_Example" */ = {
+		2A357AE41E06E570DC03CB27AFEBE5F5 /* Build configuration list for PBXNativeTarget "Pods-HYLearningSwift_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37BAB9FFCB999DB46A15A8063B0C3FA4 /* Debug */,
-				91B4D7D4752EFCC63037710653C669E4 /* Release */,
+				1EC34E4333363CD8D570E77F430C0A08 /* Debug */,
+				F17B2E2C2EB9174C423D4FDCCA08315E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B54E2658C522D14F673E30F19A0AFF3 /* Build configuration list for PBXNativeTarget "HYLearningSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C337D0791B8FC6B47E9F90E22C7837C /* Debug */,
+				1C0174A2DBDF03A29015516054B0D31D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35335EEAE8DDB69EB52B1A20A17B26BA /* Build configuration list for PBXNativeTarget "HandyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808EE865F58837A68463EA63A1454A15 /* Debug */,
+				AA47880128C8F0C5E132D2BF574B4C70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1035,15 +1377,6 @@
 			buildConfigurations = (
 				441C7939108738A0C7CD37CBADE0B85E /* Debug */,
 				BE874B114A0991701B09229EAAA4CA84 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D30627E040646F959312927E858E03AC /* Build configuration list for PBXNativeTarget "HYLearningSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C98A1BA09D94ED7D6670641C424F1367 /* Debug */,
-				DB7E50289B25D6A87B908D8166ADD747 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

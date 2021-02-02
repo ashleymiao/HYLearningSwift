@@ -4,7 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - HYLearningSwift (0.1.2)
+  - HandyJSON (5.0.2)
+  - HYLearningSwift (0.1.4):
+    - HandyJSON
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -13,6 +15,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - HandyJSON
 
 EXTERNAL SOURCES:
   HYLearningSwift:
@@ -20,7 +23,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HYLearningSwift: 58740bd92b583ca5dbd4ded109f67eee9a126bdc
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  HYLearningSwift: e418d69b9435c8d9314c4fc4615f9c57b7bc72dd
 
 PODFILE CHECKSUM: 1fb65d832f88b480a3957adec5d3eb7026504080
 

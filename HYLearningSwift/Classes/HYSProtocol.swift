@@ -1,4 +1,14 @@
 import Foundation
+import HandyJSON
+
+
+class BasicTypes: HandyJSON {
+    var int: Int = 2
+    var doubleOptional: Double?
+    var stringImplicitlyUnwrapped: String!
+
+    required init() {}
+}
 
 public class HYSProtocol { //必须声明为public，工程外面才可以访问
     public var name: String?

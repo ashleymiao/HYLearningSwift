@@ -333,10 +333,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HYLearningSwift_Example/Pods-HYLearningSwift_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HYLearningSwift/HYLearningSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYLearningSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
