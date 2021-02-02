@@ -1,4 +1,5 @@
 # HYLearningSwift
+<<<<<<< HEAD
 
 [![CI Status](https://img.shields.io/travis/994059254@qq.com/HYLearningSwift.svg?style=flat)](https://travis-ci.org/994059254@qq.com/HYLearningSwift)
 [![Version](https://img.shields.io/cocoapods/v/HYLearningSwift.svg?style=flat)](https://cocoapods.org/pods/HYLearningSwift)
@@ -27,3 +28,6 @@ pod 'HYLearningSwift'
 ## License
 
 HYLearningSwift is available under the MIT license. See the LICENSE file for more info.
+=======
+swift 基础知识学习库
+>>>>>>> 3f86bac459c512e51acdac64f5e8b8170e65bece
