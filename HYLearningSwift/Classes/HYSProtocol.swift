@@ -7,6 +7,9 @@ public class HYSProtocol { //必须声明为public，工程外面才可以访问
     }
     
     public func hyTest() { //不声明默认是internal的，只在framework中可以使用
+        let manager = HYOCManager()
+        
+        
         let teacher2 = HYTeacher2()
         teacher2.doSomething() //通过类的函数调度表访问函数
         teacher2.ownMethod()
@@ -20,10 +23,53 @@ public class HYSProtocol { //必须声明为public，工程外面才可以访问
         HYTeacher.teach() //直接访问函数
         let teacher = HYTeacher()
         teacher.doSomething() //直接访问函数
-        
+        testShape()
+    }
+    
+    func testShape() {
+        let circle: Shape = Circle.init(10.0)
+        let rectangle: Shape = Rectangle.init(10.0, 30.0)
+        let shapes: [Shape] = [circle, rectangle]
+        for shape in shapes {
+            print(shape.area)
+        }
     }
 }
 
+class Shape {
+    var area: Double{
+        get{
+            return 0
+        }
+    }
+}
+
+class Circle: Shape {
+    var radious: Double
+    
+    init(_ radious: Double) {
+        self.radious = radious
+    }
+    
+    override var area: Double {
+        get {
+            return radious * radious * 3.14
+        }
+    }
+}
+
+class Rectangle: Shape {
+    var width, height: Double
+    init(_ width: Double, _ height: Double) {
+        self.width = width
+        self.height = height
+    }
+    override var area: Double {
+        get {
+            return width * height
+        }
+    }
+}
 
 
 //协议基本用法

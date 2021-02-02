@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - HYLearningSwift (0.1.1)
+  - HYLearningSwift (0.1.2)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HYLearningSwift: 6496d42f5c3db94d19b638cc64c180da5405bfbe
+  HYLearningSwift: 58740bd92b583ca5dbd4ded109f67eee9a126bdc
 
 PODFILE CHECKSUM: 1fb65d832f88b480a3957adec5d3eb7026504080
 

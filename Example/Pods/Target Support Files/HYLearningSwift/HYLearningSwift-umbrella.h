@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "HYOCManager.h"
 
 FOUNDATION_EXPORT double HYLearningSwiftVersionNumber;
 FOUNDATION_EXPORT const unsigned char HYLearningSwiftVersionString[];

@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        let pto = HYSProtocol()
+       let manager = HYOCManager()
         pto.name = "123"
         pto.hyTest()
         
