@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HYLearningSwift'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Swift 基本语法学习'
 
 # This description is used to generate tags and improve search results.

@@ -7,6 +7,6 @@
 
 import UIKit
 
-class HYSwiftServiceOC: NSObject {
+public class HYSwiftServiceOC: NSObject {
 
 }
