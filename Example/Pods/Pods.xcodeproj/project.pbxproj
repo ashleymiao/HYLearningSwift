@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09755991A004E2515ECB9F69C37D424D /* HYLearningSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C065996F73813884F7FCB0683B23DF72 /* HYLearningSwift-dummy.m */; };
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
+		2FFB0D8F07668DD91D5007354D0E8545 /* HYSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386235AB20D82EE4027203EC6902399E /* HYSProtocol.swift */; };
 		38F78D6D861B673351AF356525D71217 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		478036EDE0C01680F9B20CD6BA925D08 /* HYLearningSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15A6F1A9CC52D68B8108446BD8FBCEB8 /* HYLearningSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60855FCDAF309D39BDF0965EFE7154FD /* Pods-HYLearningSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10591F95352E3F0BC7DB4CCE0EFB4F69 /* Pods-HYLearningSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6713DAF16DC276F3FE2D6BC0AB305725 /* Pods-HYLearningSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CD8B6D270326F657F96A5D80606457 /* Pods-HYLearningSwift_Tests-dummy.m */; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
+		7F594939343BD86DABA3A2A42BAE0B80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
+		83560D498346B12CECEA813318B7DFB9 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6323BD861123ECB4E750E9F398DBB3 /* ReplaceMe.swift */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,32 +33,30 @@
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E0B8D095C732352C854D365B9E5B993D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */; };
+		E2E429B88954E662F1EE25D764D8BB39 /* HYLearningSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FD383427C0D3DCFFF893757531636C /* HYLearningSwift-dummy.m */; };
 		E500AA9D6CBA1D63EE649CE4A80F3AE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		E833BF420A02FBB2F677869537CF4AC6 /* HYLearningSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C61ABA1FA5DFD7E5B5B39541636486 /* HYLearningSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB67D74515010B27693C49FBFA55B6D4 /* Pods-HYLearningSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0A0DCEC1D7AF9D2A3FBA7B1D3D3902E /* Pods-HYLearningSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEA3125B7404EE8FD9DB1023A2C8AC01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		FF26CDDA7B3250BF2DD71978E7748CCB /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220158C28DF0AFB35EE6B6DA3C9803C0 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A68B6C6200C082E943334C7D93F30B9 /* PBXContainerItemProxy */ = {
+		1B17A30DB2BFAA6395139529289342F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
 			remoteInfo = FBSnapshotTestCase;
 		};
-		0F0578A02174A6EF11A1547AAE8ABAD3 /* PBXContainerItemProxy */ = {
+		A3F91AC77420E813B1185A78F4B4CF1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 14E0B398489C8CAFCE51BD96CE88D1F7;
 			remoteInfo = HYLearningSwift;
 		};
-		2697DE1ABD55CCE5A298941EE4CF4F43 /* PBXContainerItemProxy */ = {
+		C86F70FFD89BF61494558F2AD019C360 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -66,64 +67,65 @@
 
 /* Begin PBXFileReference section */
 		0532196132F52627799D16B2EB87BF59 /* Pods-HYLearningSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYLearningSwift_Example-Info.plist"; sourceTree = "<group>"; };
-		075AE73A3CE0C1EA0218AE14BE5A3F7C /* Pods_HYLearningSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYLearningSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		075AE73A3CE0C1EA0218AE14BE5A3F7C /* Pods_HYLearningSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HYLearningSwift_Tests.framework; path = "Pods-HYLearningSwift_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		10591F95352E3F0BC7DB4CCE0EFB4F69 /* Pods-HYLearningSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HYLearningSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
-		1AD2DE387FBD4AAB58DFD96689E9EBB9 /* HYLearningSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HYLearningSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A6F1A9CC52D68B8108446BD8FBCEB8 /* HYLearningSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYLearningSwift-umbrella.h"; sourceTree = "<group>"; };
+		1AD2DE387FBD4AAB58DFD96689E9EBB9 /* HYLearningSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HYLearningSwift.framework; path = HYLearningSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		220158C28DF0AFB35EE6B6DA3C9803C0 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HYLearningSwift/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		267772463894CA1FE41E31DE7ED896E3 /* Pods-HYLearningSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYLearningSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		26C61ABA1FA5DFD7E5B5B39541636486 /* HYLearningSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYLearningSwift-umbrella.h"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		2A6323BD861123ECB4E750E9F398DBB3 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HYLearningSwift/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		329E127AE8F42CA3357017801C435996 /* Pods-HYLearningSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HYLearningSwift_Example.modulemap"; sourceTree = "<group>"; };
+		386235AB20D82EE4027203EC6902399E /* HYSProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HYSProtocol.swift; path = HYLearningSwift/Classes/HYSProtocol.swift; sourceTree = "<group>"; };
 		3D16CF9F8E7ED7FBAB85E37D9A4CF5B6 /* Pods-HYLearningSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HYLearningSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
-		42CF448C27F731A8A1CE474978AA3AAC /* HYLearningSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HYLearningSwift.modulemap; sourceTree = "<group>"; };
+		3FB2DB949138E9A310626FE9DD0E6E0D /* HYLearningSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HYLearningSwift-Info.plist"; sourceTree = "<group>"; };
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		488C9B47A55A9CB9553BA6E28205ADD2 /* HYLearningSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HYLearningSwift-Info.plist"; sourceTree = "<group>"; };
 		4B549FA56BBBA748F93F5F9270EC08C1 /* Pods-HYLearningSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYLearningSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		678AEFF60EEA651A45565D3CAAC184FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		6A590055EE96B7DB24E173B6E467A75E /* Pods-HYLearningSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYLearningSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		7664D92900AB3C9256A9F0CF43F87E6A /* HYLearningSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HYLearningSwift.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		79CD8B6D270326F657F96A5D80606457 /* Pods-HYLearningSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HYLearningSwift_Tests-dummy.m"; sourceTree = "<group>"; };
 		7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		7F49EF41126C51423BD09988322242A8 /* HYLearningSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYLearningSwift.release.xcconfig; sourceTree = "<group>"; };
 		87E4C64135FBDF7EB3CA10CB209B4D3D /* Pods-HYLearningSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYLearningSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		8B7CF2A500F61054C5C491092D57F396 /* Pods-HYLearningSwift_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HYLearningSwift_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		8F23722122F303F491AE73F8AA40F87E /* Pods-HYLearningSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYLearningSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		924E33334820D523ABCB526DA6361B31 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		92F2FD7FB7BDDDF39B3F98CC20A51F4C /* HYLearningSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYLearningSwift-prefix.pch"; sourceTree = "<group>"; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		997238AB306CE2C08069A5970ACFAF1B /* HYLearningSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HYLearningSwift.modulemap; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA4FB9041CA2D376CF06FFCC87E47E87 /* Pods-HYLearningSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HYLearningSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		ABEE6DBB954AEB5FF7414258027A5530 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		BEBCAE55DFE5E3B6810A04248A86977E /* Pods-HYLearningSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HYLearningSwift_Tests.modulemap"; sourceTree = "<group>"; };
-		C065996F73813884F7FCB0683B23DF72 /* HYLearningSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HYLearningSwift-dummy.m"; sourceTree = "<group>"; };
-		C1A1B2A0639D303798C9A61EC7C9551B /* HYLearningSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYLearningSwift.debug.xcconfig; sourceTree = "<group>"; };
-		C8D570AA35AADC76DB6337E7FF96E3E2 /* HYLearningSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYLearningSwift.release.xcconfig; sourceTree = "<group>"; };
+		C369A0F9C153098C2957A9094C0EDD48 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		D0621F2702E52401343DDF2373C4B208 /* Pods_HYLearningSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYLearningSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0621F2702E52401343DDF2373C4B208 /* Pods_HYLearningSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HYLearningSwift_Example.framework; path = "Pods-HYLearningSwift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		D8B4683FFC5DF65C3E7353E3D09E98E9 /* Pods-HYLearningSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYLearningSwift_Tests-Info.plist"; sourceTree = "<group>"; };
 		D956D665550FA73E4A761D5A0A1B9453 /* Pods-HYLearningSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYLearningSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF0C5B0AC89D9F27B6CB9E18507AF531 /* HYLearningSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYLearningSwift.debug.xcconfig; sourceTree = "<group>"; };
 		E26215634C5E863C121E057B121B499A /* Pods-HYLearningSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HYLearningSwift_Example-dummy.m"; sourceTree = "<group>"; };
+		E2FD383427C0D3DCFFF893757531636C /* HYLearningSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HYLearningSwift-dummy.m"; sourceTree = "<group>"; };
 		EB1A8A56C406BBC108953E76AF867727 /* Pods-HYLearningSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HYLearningSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		ECB8AE73CA744546CDAFC82F07A2DD65 /* HYLearningSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYLearningSwift-prefix.pch"; sourceTree = "<group>"; };
 		F0A0DCEC1D7AF9D2A3FBA7B1D3D3902E /* Pods-HYLearningSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HYLearningSwift_Example-umbrella.h"; sourceTree = "<group>"; };
+		FDD17886ACF226E35FD4AE57652F3CEA /* HYLearningSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HYLearningSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,11 +138,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		56D9345143CC3A4CA95A417A7C4B423A /* Frameworks */ = {
+		5FB053EFB4F6B8B80BFD4278D983F15C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEA3125B7404EE8FD9DB1023A2C8AC01 /* Foundation.framework in Frameworks */,
+				7F594939343BD86DABA3A2A42BAE0B80 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,17 +168,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23ABF04C20C7FF2291AD685F09A92F32 /* HYLearningSwift */ = {
-			isa = PBXGroup;
-			children = (
-				220158C28DF0AFB35EE6B6DA3C9803C0 /* ReplaceMe.swift */,
-				BCAB1527A98AD2FB189B314CC0625680 /* Pod */,
-				3A8FD4EFC56759E5B40F17AE5A946C1C /* Support Files */,
-			);
-			name = HYLearningSwift;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		393F4A75ED8DCFC4A75C808906F31A95 /* Pods-HYLearningSwift_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,21 +183,6 @@
 			);
 			name = "Pods-HYLearningSwift_Tests";
 			path = "Target Support Files/Pods-HYLearningSwift_Tests";
-			sourceTree = "<group>";
-		};
-		3A8FD4EFC56759E5B40F17AE5A946C1C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				42CF448C27F731A8A1CE474978AA3AAC /* HYLearningSwift.modulemap */,
-				C065996F73813884F7FCB0683B23DF72 /* HYLearningSwift-dummy.m */,
-				488C9B47A55A9CB9553BA6E28205ADD2 /* HYLearningSwift-Info.plist */,
-				92F2FD7FB7BDDDF39B3F98CC20A51F4C /* HYLearningSwift-prefix.pch */,
-				26C61ABA1FA5DFD7E5B5B39541636486 /* HYLearningSwift-umbrella.h */,
-				C1A1B2A0639D303798C9A61EC7C9551B /* HYLearningSwift.debug.xcconfig */,
-				C8D570AA35AADC76DB6337E7FF96E3E2 /* HYLearningSwift.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HYLearningSwift";
 			sourceTree = "<group>";
 		};
 		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
@@ -230,6 +206,18 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		6C3C8A1B1F5E8D7B5DF8396F3EB88C06 /* HYLearningSwift */ = {
+			isa = PBXGroup;
+			children = (
+				386235AB20D82EE4027203EC6902399E /* HYSProtocol.swift */,
+				2A6323BD861123ECB4E750E9F398DBB3 /* ReplaceMe.swift */,
+				8AD324AEA89C704ECB44F4A042FCB04C /* Pod */,
+				C1B319393227689745F6DCF10049D5B4 /* Support Files */,
+			);
+			name = HYLearningSwift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		7DE5752EED0A4C4A430975244947611A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +227,24 @@
 				5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		8AD324AEA89C704ECB44F4A042FCB04C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FDD17886ACF226E35FD4AE57652F3CEA /* HYLearningSwift.podspec */,
+				C369A0F9C153098C2957A9094C0EDD48 /* LICENSE */,
+				678AEFF60EEA651A45565D3CAAC184FB /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		8F48B57F4F2D7890DFAC7C3CA0FBBE27 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C3C8A1B1F5E8D7B5DF8396F3EB88C06 /* HYLearningSwift */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */ = {
@@ -289,16 +295,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BCAB1527A98AD2FB189B314CC0625680 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				7664D92900AB3C9256A9F0CF43F87E6A /* HYLearningSwift.podspec */,
-				924E33334820D523ABCB526DA6361B31 /* LICENSE */,
-				ABEE6DBB954AEB5FF7414258027A5530 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,22 +302,30 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
-		CBA8A0F233A24A3A060A6D17C31F09F7 /* Development Pods */ = {
+		C1B319393227689745F6DCF10049D5B4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				23ABF04C20C7FF2291AD685F09A92F32 /* HYLearningSwift */,
+				997238AB306CE2C08069A5970ACFAF1B /* HYLearningSwift.modulemap */,
+				E2FD383427C0D3DCFFF893757531636C /* HYLearningSwift-dummy.m */,
+				3FB2DB949138E9A310626FE9DD0E6E0D /* HYLearningSwift-Info.plist */,
+				ECB8AE73CA744546CDAFC82F07A2DD65 /* HYLearningSwift-prefix.pch */,
+				15A6F1A9CC52D68B8108446BD8FBCEB8 /* HYLearningSwift-umbrella.h */,
+				DF0C5B0AC89D9F27B6CB9E18507AF531 /* HYLearningSwift.debug.xcconfig */,
+				7F49EF41126C51423BD09988322242A8 /* HYLearningSwift.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HYLearningSwift";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				CBA8A0F233A24A3A060A6D17C31F09F7 /* Development Pods */,
+				8F48B57F4F2D7890DFAC7C3CA0FBBE27 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				E81A37DBDE41E671312C56736544E2FA /* Pods */,
 				F443EEC91A2BCCB7CFDBE11F8483065B /* Products */,
@@ -391,11 +395,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E68960798BD3D03E1E87EECC9F601507 /* Headers */ = {
+		E8B6518C3614C844A53A104FB80E07DA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E833BF420A02FBB2F677869537CF4AC6 /* HYLearningSwift-umbrella.h in Headers */,
+				478036EDE0C01680F9B20CD6BA925D08 /* HYLearningSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,12 +408,12 @@
 /* Begin PBXNativeTarget section */
 		14E0B398489C8CAFCE51BD96CE88D1F7 /* HYLearningSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31273703E4BDD423603B22CAD6DF74C7 /* Build configuration list for PBXNativeTarget "HYLearningSwift" */;
+			buildConfigurationList = 212203A7D26A57F479F63EFE4B5D83DA /* Build configuration list for PBXNativeTarget "HYLearningSwift" */;
 			buildPhases = (
-				E68960798BD3D03E1E87EECC9F601507 /* Headers */,
-				A6C96E4D41C88260913C8FCB40B8A569 /* Sources */,
-				56D9345143CC3A4CA95A417A7C4B423A /* Frameworks */,
-				23D9F350BCA386359359A1D5212C954B /* Resources */,
+				E8B6518C3614C844A53A104FB80E07DA /* Headers */,
+				153DAD3D62C4A2DCBF57CAB4BB1AF108 /* Sources */,
+				5FB053EFB4F6B8B80BFD4278D983F15C /* Frameworks */,
+				00A73FB964EB4E1147C5CC142EC698DA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -450,8 +454,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				337BB6E86FE20FE1496E6BC63052654E /* PBXTargetDependency */,
-				DFBEC32A350181699D2F132A49A18E22 /* PBXTargetDependency */,
+				713149DD982A45A42A6AAF38483E66C1 /* PBXTargetDependency */,
+				4AA2C03EBEA4473726058F3A76653D79 /* PBXTargetDependency */,
 			);
 			name = "Pods-HYLearningSwift_Tests";
 			productName = "Pods-HYLearningSwift_Tests";
@@ -470,7 +474,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E03E13ED70E40A5382D7687D7A853C8C /* PBXTargetDependency */,
+				11E0B8BF4EF00378AA24480D33147EEA /* PBXTargetDependency */,
 			);
 			name = "Pods-HYLearningSwift_Example";
 			productName = "Pods-HYLearningSwift_Example";
@@ -508,7 +512,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		23D9F350BCA386359359A1D5212C954B /* Resources */ = {
+		00A73FB964EB4E1147C5CC142EC698DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -539,6 +543,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		153DAD3D62C4A2DCBF57CAB4BB1AF108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E429B88954E662F1EE25D764D8BB39 /* HYLearningSwift-dummy.m in Sources */,
+				2FFB0D8F07668DD91D5007354D0E8545 /* HYSProtocol.swift in Sources */,
+				83560D498346B12CECEA813318B7DFB9 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A454EBD5E81595C17E58A92DF38EA5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -563,15 +577,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6C96E4D41C88260913C8FCB40B8A569 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09755991A004E2515ECB9F69C37D424D /* HYLearningSwift-dummy.m in Sources */,
-				FF26CDDA7B3250BF2DD71978E7748CCB /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E2536DFCA3A08948A74941190DBF04B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -583,27 +588,58 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		337BB6E86FE20FE1496E6BC63052654E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 0A68B6C6200C082E943334C7D93F30B9 /* PBXContainerItemProxy */;
-		};
-		DFBEC32A350181699D2F132A49A18E22 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-HYLearningSwift_Example";
-			target = FB914B4C8515FF221BF68335D9F6BAA0 /* Pods-HYLearningSwift_Example */;
-			targetProxy = 2697DE1ABD55CCE5A298941EE4CF4F43 /* PBXContainerItemProxy */;
-		};
-		E03E13ED70E40A5382D7687D7A853C8C /* PBXTargetDependency */ = {
+		11E0B8BF4EF00378AA24480D33147EEA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HYLearningSwift;
 			target = 14E0B398489C8CAFCE51BD96CE88D1F7 /* HYLearningSwift */;
-			targetProxy = 0F0578A02174A6EF11A1547AAE8ABAD3 /* PBXContainerItemProxy */;
+			targetProxy = A3F91AC77420E813B1185A78F4B4CF1C /* PBXContainerItemProxy */;
+		};
+		4AA2C03EBEA4473726058F3A76653D79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HYLearningSwift_Example";
+			target = FB914B4C8515FF221BF68335D9F6BAA0 /* Pods-HYLearningSwift_Example */;
+			targetProxy = C86F70FFD89BF61494558F2AD019C360 /* PBXContainerItemProxy */;
+		};
+		713149DD982A45A42A6AAF38483E66C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 1B17A30DB2BFAA6395139529289342F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		20829C572EDBFEC24947AE60DA937911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF0C5B0AC89D9F27B6CB9E18507AF531 /* HYLearningSwift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HYLearningSwift/HYLearningSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift.modulemap";
+				PRODUCT_MODULE_NAME = HYLearningSwift;
+				PRODUCT_NAME = HYLearningSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		37BAB9FFCB999DB46A15A8063B0C3FA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B549FA56BBBA748F93F5F9270EC08C1 /* Pods-HYLearningSwift_Example.debug.xcconfig */;
@@ -701,37 +737,6 @@
 			};
 			name = Debug;
 		};
-		8DECA41AC44F1F60FD723B7990C1DF92 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1A1B2A0639D303798C9A61EC7C9551B /* HYLearningSwift.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HYLearningSwift/HYLearningSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HYLearningSwift/HYLearningSwift.modulemap";
-				PRODUCT_MODULE_NAME = HYLearningSwift;
-				PRODUCT_NAME = HYLearningSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -785,7 +790,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -889,9 +895,9 @@
 			};
 			name = Release;
 		};
-		A2EC1B41B8E07D1A749F9A157D86F414 /* Release */ = {
+		926845BE440586875A2FA06C0E63D68D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8D570AA35AADC76DB6337E7FF96E3E2 /* HYLearningSwift.release.xcconfig */;
+			baseConfigurationReference = 7F49EF41126C51423BD09988322242A8 /* HYLearningSwift.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -999,11 +1005,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31273703E4BDD423603B22CAD6DF74C7 /* Build configuration list for PBXNativeTarget "HYLearningSwift" */ = {
+		212203A7D26A57F479F63EFE4B5D83DA /* Build configuration list for PBXNativeTarget "HYLearningSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DECA41AC44F1F60FD723B7990C1DF92 /* Debug */,
-				A2EC1B41B8E07D1A749F9A157D86F414 /* Release */,
+				20829C572EDBFEC24947AE60DA937911 /* Debug */,
+				926845BE440586875A2FA06C0E63D68D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

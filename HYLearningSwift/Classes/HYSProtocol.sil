@@ -1,0 +1,465 @@
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+import Foundation
+
+public class HYSProtocol {
+  @_hasStorage @_hasInitialValue public var name: String? { get set }
+  public init()
+  public func hyTest()
+  @objc deinit
+}
+
+protocol MYProtocol {
+  func doSomething()
+  static func teach()
+}
+
+extension MYProtocol {
+  func readBooks()
+}
+
+struct HYTeacher : MYProtocol {
+  func doSomething()
+  func ownMethod()
+  static func teach()
+  func readBooks()
+  init()
+}
+
+@objc @_inheritsConvenienceInitializers class HYTeacher2 : NSObject, MYProtocol {
+  func doSomething()
+  static func teach()
+  func ownMethod()
+  func readBooks()
+  @objc deinit
+  override dynamic init()
+}
+
+protocol MYPropertyProtocol {
+  var age: Int { get }
+}
+
+// main
+sil [ossa] @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(%0 : $Int32, %1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):
+  %2 = integer_literal $Builtin.Int32, 0          // user: %3
+  %3 = struct $Int32 (%2 : $Builtin.Int32)        // user: %4
+  return %3 : $Int32                              // id: %4
+} // end sil function 'main'
+
+// variable initialization expression of HYSProtocol.name
+sil [transparent] [ossa] @$s11HYSProtocolAAC4nameSSSgvpfi : $@convention(thin) () -> @owned Optional<String> {
+bb0:
+  %0 = enum $Optional<String>, #Optional.none!enumelt // user: %1
+  return %0 : $Optional<String>                   // id: %1
+} // end sil function '$s11HYSProtocolAAC4nameSSSgvpfi'
+
+// HYSProtocol.name.getter
+sil [transparent] [serialized] [ossa] @$s11HYSProtocolAAC4nameSSSgvg : $@convention(method) (@guaranteed HYSProtocol) -> @owned Optional<String> {
+// %0 "self"                                      // users: %2, %1
+bb0(%0 : @guaranteed $HYSProtocol):
+  debug_value %0 : $HYSProtocol, let, name "self", argno 1 // id: %1
+  %2 = ref_element_addr %0 : $HYSProtocol, #HYSProtocol.name // user: %3
+  %3 = begin_access [read] [dynamic] %2 : $*Optional<String> // users: %5, %4
+  %4 = load [copy] %3 : $*Optional<String>        // user: %6
+  end_access %3 : $*Optional<String>              // id: %5
+  return %4 : $Optional<String>                   // id: %6
+} // end sil function '$s11HYSProtocolAAC4nameSSSgvg'
+
+// HYSProtocol.name.setter
+sil [transparent] [serialized] [ossa] @$s11HYSProtocolAAC4nameSSSgvs : $@convention(method) (@owned Optional<String>, @guaranteed HYSProtocol) -> () {
+// %0 "value"                                     // users: %11, %4, %2
+// %1 "self"                                      // users: %6, %3
+bb0(%0 : @owned $Optional<String>, %1 : @guaranteed $HYSProtocol):
+  debug_value %0 : $Optional<String>, let, name "value", argno 1 // id: %2
+  debug_value %1 : $HYSProtocol, let, name "self", argno 2 // id: %3
+  %4 = begin_borrow %0 : $Optional<String>        // users: %10, %5
+  %5 = copy_value %4 : $Optional<String>          // user: %8
+  %6 = ref_element_addr %1 : $HYSProtocol, #HYSProtocol.name // user: %7
+  %7 = begin_access [modify] [dynamic] %6 : $*Optional<String> // users: %9, %8
+  assign %5 to %7 : $*Optional<String>            // id: %8
+  end_access %7 : $*Optional<String>              // id: %9
+  end_borrow %4 : $Optional<String>               // id: %10
+  destroy_value %0 : $Optional<String>            // id: %11
+  %12 = tuple ()                                  // user: %13
+  return %12 : $()                                // id: %13
+} // end sil function '$s11HYSProtocolAAC4nameSSSgvs'
+
+// HYSProtocol.name.modify
+sil [transparent] [serialized] [ossa] @$s11HYSProtocolAAC4nameSSSgvM : $@yield_once @convention(method) (@guaranteed HYSProtocol) -> @yields @inout Optional<String> {
+// %0 "self"                                      // users: %2, %1
+bb0(%0 : @guaranteed $HYSProtocol):
+  debug_value %0 : $HYSProtocol, let, name "self", argno 1 // id: %1
+  %2 = ref_element_addr %0 : $HYSProtocol, #HYSProtocol.name // user: %3
+  %3 = begin_access [modify] [dynamic] %2 : $*Optional<String> // users: %5, %8, %4
+  yield %3 : $*Optional<String>, resume bb1, unwind bb2 // id: %4
+
+bb1:                                              // Preds: bb0
+  end_access %3 : $*Optional<String>              // id: %5
+  %6 = tuple ()                                   // user: %7
+  return %6 : $()                                 // id: %7
+
+bb2:                                              // Preds: bb0
+  end_access %3 : $*Optional<String>              // id: %8
+  unwind                                          // id: %9
+} // end sil function '$s11HYSProtocolAAC4nameSSSgvM'
+
+// HYSProtocol.__allocating_init()
+sil [serialized] [exact_self_class] [ossa] @$s11HYSProtocolAACABycfC : $@convention(method) (@thick HYSProtocol.Type) -> @owned HYSProtocol {
+// %0 "$metatype"
+bb0(%0 : $@thick HYSProtocol.Type):
+  %1 = alloc_ref $HYSProtocol                     // user: %3
+  // function_ref HYSProtocol.init()
+  %2 = function_ref @$s11HYSProtocolAACABycfc : $@convention(method) (@owned HYSProtocol) -> @owned HYSProtocol // user: %3
+  %3 = apply %2(%1) : $@convention(method) (@owned HYSProtocol) -> @owned HYSProtocol // user: %4
+  return %3 : $HYSProtocol                        // id: %4
+} // end sil function '$s11HYSProtocolAACABycfC'
+
+// HYSProtocol.init()
+sil [ossa] @$s11HYSProtocolAACABycfc : $@convention(method) (@owned HYSProtocol) -> @owned HYSProtocol {
+// %0 "self"                                      // users: %2, %1
+bb0(%0 : @owned $HYSProtocol):
+  debug_value %0 : $HYSProtocol, let, name "self", argno 1 // id: %1
+  %2 = mark_uninitialized [rootself] %0 : $HYSProtocol // users: %12, %11, %5
+  // function_ref variable initialization expression of HYSProtocol.name
+  %3 = function_ref @$s11HYSProtocolAAC4nameSSSgvpfi : $@convention(thin) () -> @owned Optional<String> // user: %4
+  %4 = apply %3() : $@convention(thin) () -> @owned Optional<String> // user: %8
+  %5 = begin_borrow %2 : $HYSProtocol             // users: %10, %6
+  %6 = ref_element_addr %5 : $HYSProtocol, #HYSProtocol.name // user: %7
+  %7 = begin_access [modify] [dynamic] %6 : $*Optional<String> // users: %9, %8
+  assign %4 to %7 : $*Optional<String>            // id: %8
+  end_access %7 : $*Optional<String>              // id: %9
+  end_borrow %5 : $HYSProtocol                    // id: %10
+  %11 = copy_value %2 : $HYSProtocol              // user: %13
+  destroy_value %2 : $HYSProtocol                 // id: %12
+  return %11 : $HYSProtocol                       // id: %13
+} // end sil function '$s11HYSProtocolAACABycfc'
+
+// HYSProtocol.hyTest()
+sil [ossa] @$s11HYSProtocolAAC6hyTestyyF : $@convention(method) (@guaranteed HYSProtocol) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : @guaranteed $HYSProtocol):
+  debug_value %0 : $HYSProtocol, let, name "self", argno 1 // id: %1
+  %2 = metatype $@thick HYTeacher2.Type           // user: %4
+  // function_ref HYTeacher2.__allocating_init()
+  %3 = function_ref @$s11HYSProtocol10HYTeacher2CACycfC : $@convention(method) (@thick HYTeacher2.Type) -> @owned HYTeacher2 // user: %4
+  %4 = apply %3(%2) : $@convention(method) (@thick HYTeacher2.Type) -> @owned HYTeacher2 // users: %40, %10, %6, %5
+  debug_value %4 : $HYTeacher2, let, name "teacher2" // id: %5
+  %6 = begin_borrow %4 : $HYTeacher2              // users: %9, %8, %7
+  %7 = class_method %6 : $HYTeacher2, #HYTeacher2.doSomething : (HYTeacher2) -> () -> (), $@convention(method) (@guaranteed HYTeacher2) -> () // user: %8
+  %8 = apply %7(%6) : $@convention(method) (@guaranteed HYTeacher2) -> ()
+  end_borrow %6 : $HYTeacher2                     // id: %9
+  %10 = begin_borrow %4 : $HYTeacher2             // users: %13, %12, %11
+  %11 = class_method %10 : $HYTeacher2, #HYTeacher2.ownMethod : (HYTeacher2) -> () -> (), $@convention(method) (@guaranteed HYTeacher2) -> () // user: %12
+  %12 = apply %11(%10) : $@convention(method) (@guaranteed HYTeacher2) -> ()
+  end_borrow %10 : $HYTeacher2                    // id: %13
+  %14 = metatype $@thick HYTeacher2.Type          // user: %16
+  // function_ref static HYTeacher2.teach()
+  %15 = function_ref @$s11HYSProtocol10HYTeacher2C5teachyyFZ : $@convention(method) (@thick HYTeacher2.Type) -> () // user: %16
+  %16 = apply %15(%14) : $@convention(method) (@thick HYTeacher2.Type) -> ()
+  %17 = alloc_stack $MYProtocol, let, name "pro"  // users: %39, %38, %26, %23, %21
+  %18 = metatype $@thick HYTeacher2.Type          // user: %20
+  // function_ref HYTeacher2.__allocating_init()
+  %19 = function_ref @$s11HYSProtocol10HYTeacher2CACycfC : $@convention(method) (@thick HYTeacher2.Type) -> @owned HYTeacher2 // user: %20
+  %20 = apply %19(%18) : $@convention(method) (@thick HYTeacher2.Type) -> @owned HYTeacher2 // user: %22
+  %21 = init_existential_addr %17 : $*MYProtocol, $HYTeacher2 // user: %22
+  store %20 to [init] %21 : $*HYTeacher2          // id: %22
+  %23 = open_existential_addr immutable_access %17 : $*MYProtocol to $*@opened("7ACB15E6-6516-11EB-A945-3C7D0A039AF4") MYProtocol // users: %25, %25, %24
+  %24 = witness_method $@opened("7ACB15E6-6516-11EB-A945-3C7D0A039AF4") MYProtocol, #MYProtocol.doSomething : <Self where Self : MYProtocol> (Self) -> () -> (), %23 : $*@opened("7ACB15E6-6516-11EB-A945-3C7D0A039AF4") MYProtocol : $@convention(witness_method: MYProtocol) <τ_0_0 where τ_0_0 : MYProtocol> (@in_guaranteed τ_0_0) -> () // type-defs: %23; user: %25
+  %25 = apply %24<@opened("7ACB15E6-6516-11EB-A945-3C7D0A039AF4") MYProtocol>(%23) : $@convention(witness_method: MYProtocol) <τ_0_0 where τ_0_0 : MYProtocol> (@in_guaranteed τ_0_0) -> () // type-defs: %23
+  %26 = open_existential_addr immutable_access %17 : $*MYProtocol to $*@opened("7ACB17F8-6516-11EB-A945-3C7D0A039AF4") MYProtocol // users: %28, %28
+  // function_ref MYProtocol.readBooks()
+  %27 = function_ref @$s11HYSProtocol10MYProtocolPAAE9readBooksyyF : $@convention(method) <τ_0_0 where τ_0_0 : MYProtocol> (@in_guaranteed τ_0_0) -> () // user: %28
+  %28 = apply %27<@opened("7ACB17F8-6516-11EB-A945-3C7D0A039AF4") MYProtocol>(%26) : $@convention(method) <τ_0_0 where τ_0_0 : MYProtocol> (@in_guaranteed τ_0_0) -> () // type-defs: %26
+  %29 = metatype $@thin HYTeacher.Type            // user: %31
+  // function_ref static HYTeacher.teach()
+  %30 = function_ref @$s11HYSProtocol9HYTeacherV5teachyyFZ : $@convention(method) (@thin HYTeacher.Type) -> () // user: %31
+  %31 = apply %30(%29) : $@convention(method) (@thin HYTeacher.Type) -> ()
+  %32 = metatype $@thin HYTeacher.Type            // user: %34
+  // function_ref HYTeacher.init()
+  %33 = function_ref @$s11HYSProtocol9HYTeacherVACycfC : $@convention(method) (@thin HYTeacher.Type) -> HYTeacher // user: %34
+  %34 = apply %33(%32) : $@convention(method) (@thin HYTeacher.Type) -> HYTeacher // users: %37, %35
+  debug_value %34 : $HYTeacher, let, name "teacher" // id: %35
+  // function_ref HYTeacher.doSomething()
+  %36 = function_ref @$s11HYSProtocol9HYTeacherV11doSomethingyyF : $@convention(method) (HYTeacher) -> () // user: %37
+  %37 = apply %36(%34) : $@convention(method) (HYTeacher) -> ()
+  destroy_addr %17 : $*MYProtocol                 // id: %38
+  dealloc_stack %17 : $*MYProtocol                // id: %39
+  destroy_value %4 : $HYTeacher2                  // id: %40
+  %41 = tuple ()                                  // user: %42
+  return %41 : $()                                // id: %42
+} // end sil function '$s11HYSProtocolAAC6hyTestyyF'
+
+// HYTeacher2.__allocating_init()
+sil hidden [ossa] @$s11HYSProtocol10HYTeacher2CACycfC : $@convention(method) (@thick HYTeacher2.Type) -> @owned HYTeacher2 {
+// %0 "$metatype"                                 // user: %1
+bb0(%0 : $@thick HYTeacher2.Type):
+  %1 = thick_to_objc_metatype %0 : $@thick HYTeacher2.Type to $@objc_metatype HYTeacher2.Type // user: %2
+  %2 = alloc_ref_dynamic [objc] %1 : $@objc_metatype HYTeacher2.Type, $HYTeacher2 // user: %4
+  // function_ref dynamic HYTeacher2.init()
+  %3 = function_ref @$s11HYSProtocol10HYTeacher2CACycfcTD : $@convention(method) (@owned HYTeacher2) -> @owned HYTeacher2 // user: %4
+  %4 = apply %3(%2) : $@convention(method) (@owned HYTeacher2) -> @owned HYTeacher2 // user: %5
+  return %4 : $HYTeacher2                         // id: %5
+} // end sil function '$s11HYSProtocol10HYTeacher2CACycfC'
+
+// static HYTeacher2.teach()
+sil hidden [ossa] @$s11HYSProtocol10HYTeacher2C5teachyyFZ : $@convention(method) (@thick HYTeacher2.Type) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : $@thick HYTeacher2.Type):
+  debug_value %0 : $@thick HYTeacher2.Type, let, name "self", argno 1 // id: %1
+  %2 = tuple ()                                   // user: %3
+  return %2 : $()                                 // id: %3
+} // end sil function '$s11HYSProtocol10HYTeacher2C5teachyyFZ'
+
+// MYProtocol.readBooks()
+sil hidden [ossa] @$s11HYSProtocol10MYProtocolPAAE9readBooksyyF : $@convention(method) <Self where Self : MYProtocol> (@in_guaranteed Self) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : $*Self):
+  debug_value_addr %0 : $*Self, let, name "self", argno 1 // id: %1
+  %2 = tuple ()                                   // user: %3
+  return %2 : $()                                 // id: %3
+} // end sil function '$s11HYSProtocol10MYProtocolPAAE9readBooksyyF'
+
+// static HYTeacher.teach()
+sil hidden [ossa] @$s11HYSProtocol9HYTeacherV5teachyyFZ : $@convention(method) (@thin HYTeacher.Type) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : $@thin HYTeacher.Type):
+  debug_value %0 : $@thin HYTeacher.Type, let, name "self", argno 1 // id: %1
+  %2 = tuple ()                                   // user: %3
+  return %2 : $()                                 // id: %3
+} // end sil function '$s11HYSProtocol9HYTeacherV5teachyyFZ'
+
+// HYTeacher.init()
+sil hidden [ossa] @$s11HYSProtocol9HYTeacherVACycfC : $@convention(method) (@thin HYTeacher.Type) -> HYTeacher {
+// %0 "$metatype"
+bb0(%0 : $@thin HYTeacher.Type):
+  %1 = alloc_box ${ var HYTeacher }, let, name "self" // user: %2
+  %2 = mark_uninitialized [rootself] %1 : ${ var HYTeacher } // users: %5, %3
+  %3 = project_box %2 : ${ var HYTeacher }, 0     // user: %4
+  %4 = load [trivial] %3 : $*HYTeacher            // user: %6
+  destroy_value %2 : ${ var HYTeacher }           // id: %5
+  return %4 : $HYTeacher                          // id: %6
+} // end sil function '$s11HYSProtocol9HYTeacherVACycfC'
+
+// HYTeacher.doSomething()
+sil hidden [ossa] @$s11HYSProtocol9HYTeacherV11doSomethingyyF : $@convention(method) (HYTeacher) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : $HYTeacher):
+  debug_value %0 : $HYTeacher, let, name "self", argno 1 // id: %1
+  %2 = tuple ()                                   // user: %3
+  return %2 : $()                                 // id: %3
+} // end sil function '$s11HYSProtocol9HYTeacherV11doSomethingyyF'
+
+// HYSProtocol.deinit
+sil [ossa] @$s11HYSProtocolAACfd : $@convention(method) (@guaranteed HYSProtocol) -> @owned Builtin.NativeObject {
+// %0 "self"                                      // users: %6, %2, %1
+bb0(%0 : @guaranteed $HYSProtocol):
+  debug_value %0 : $HYSProtocol, let, name "self", argno 1 // id: %1
+  %2 = ref_element_addr %0 : $HYSProtocol, #HYSProtocol.name // user: %3
+  %3 = begin_access [deinit] [static] %2 : $*Optional<String> // users: %5, %4
+  destroy_addr %3 : $*Optional<String>            // id: %4
+  end_access %3 : $*Optional<String>              // id: %5
+  %6 = unchecked_ref_cast %0 : $HYSProtocol to $Builtin.NativeObject // user: %7
+  %7 = unchecked_ownership_conversion %6 : $Builtin.NativeObject, @guaranteed to @owned // user: %8
+  return %7 : $Builtin.NativeObject               // id: %8
+} // end sil function '$s11HYSProtocolAACfd'
+
+// HYSProtocol.__deallocating_deinit
+sil [ossa] @$s11HYSProtocolAACfD : $@convention(method) (@owned HYSProtocol) -> () {
+// %0 "self"                                      // users: %6, %3, %1
+bb0(%0 : @owned $HYSProtocol):
+  debug_value %0 : $HYSProtocol, let, name "self", argno 1 // id: %1
+  // function_ref HYSProtocol.deinit
+  %2 = function_ref @$s11HYSProtocolAACfd : $@convention(method) (@guaranteed HYSProtocol) -> @owned Builtin.NativeObject // user: %4
+  %3 = begin_borrow %0 : $HYSProtocol             // users: %5, %4
+  %4 = apply %2(%3) : $@convention(method) (@guaranteed HYSProtocol) -> @owned Builtin.NativeObject // user: %7
+  end_borrow %3 : $HYSProtocol                    // id: %5
+  end_lifetime %0 : $HYSProtocol                  // id: %6
+  %7 = unchecked_ref_cast %4 : $Builtin.NativeObject to $HYSProtocol // user: %8
+  dealloc_ref %7 : $HYSProtocol                   // id: %8
+  %9 = tuple ()                                   // user: %10
+  return %9 : $()                                 // id: %10
+} // end sil function '$s11HYSProtocolAACfD'
+
+// HYTeacher.ownMethod()
+sil hidden [ossa] @$s11HYSProtocol9HYTeacherV9ownMethodyyF : $@convention(method) (HYTeacher) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : $HYTeacher):
+  debug_value %0 : $HYTeacher, let, name "self", argno 1 // id: %1
+  %2 = tuple ()                                   // user: %3
+  return %2 : $()                                 // id: %3
+} // end sil function '$s11HYSProtocol9HYTeacherV9ownMethodyyF'
+
+// HYTeacher.readBooks()
+sil hidden [ossa] @$s11HYSProtocol9HYTeacherV9readBooksyyF : $@convention(method) (HYTeacher) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : $HYTeacher):
+  debug_value %0 : $HYTeacher, let, name "self", argno 1 // id: %1
+  %2 = tuple ()                                   // user: %3
+  return %2 : $()                                 // id: %3
+} // end sil function '$s11HYSProtocol9HYTeacherV9readBooksyyF'
+
+// protocol witness for MYProtocol.doSomething() in conformance HYTeacher
+sil private [transparent] [thunk] [ossa] @$s11HYSProtocol9HYTeacherVAA10MYProtocolA2aDP11doSomethingyyFTW : $@convention(witness_method: MYProtocol) (@in_guaranteed HYTeacher) -> () {
+// %0                                             // user: %1
+bb0(%0 : $*HYTeacher):
+  %1 = load [trivial] %0 : $*HYTeacher            // user: %3
+  // function_ref HYTeacher.doSomething()
+  %2 = function_ref @$s11HYSProtocol9HYTeacherV11doSomethingyyF : $@convention(method) (HYTeacher) -> () // user: %3
+  %3 = apply %2(%1) : $@convention(method) (HYTeacher) -> ()
+  %4 = tuple ()                                   // user: %5
+  return %4 : $()                                 // id: %5
+} // end sil function '$s11HYSProtocol9HYTeacherVAA10MYProtocolA2aDP11doSomethingyyFTW'
+
+// protocol witness for static MYProtocol.teach() in conformance HYTeacher
+sil private [transparent] [thunk] [ossa] @$s11HYSProtocol9HYTeacherVAA10MYProtocolA2aDP5teachyyFZTW : $@convention(witness_method: MYProtocol) (@thick HYTeacher.Type) -> () {
+bb0(%0 : $@thick HYTeacher.Type):
+  %1 = metatype $@thin HYTeacher.Type             // user: %3
+  // function_ref static HYTeacher.teach()
+  %2 = function_ref @$s11HYSProtocol9HYTeacherV5teachyyFZ : $@convention(method) (@thin HYTeacher.Type) -> () // user: %3
+  %3 = apply %2(%1) : $@convention(method) (@thin HYTeacher.Type) -> ()
+  %4 = tuple ()                                   // user: %5
+  return %4 : $()                                 // id: %5
+} // end sil function '$s11HYSProtocol9HYTeacherVAA10MYProtocolA2aDP5teachyyFZTW'
+
+// HYTeacher2.doSomething()
+sil hidden [ossa] @$s11HYSProtocol10HYTeacher2C11doSomethingyyF : $@convention(method) (@guaranteed HYTeacher2) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : @guaranteed $HYTeacher2):
+  debug_value %0 : $HYTeacher2, let, name "self", argno 1 // id: %1
+  %2 = tuple ()                                   // user: %3
+  return %2 : $()                                 // id: %3
+} // end sil function '$s11HYSProtocol10HYTeacher2C11doSomethingyyF'
+
+// HYTeacher2.ownMethod()
+sil hidden [ossa] @$s11HYSProtocol10HYTeacher2C9ownMethodyyF : $@convention(method) (@guaranteed HYTeacher2) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : @guaranteed $HYTeacher2):
+  debug_value %0 : $HYTeacher2, let, name "self", argno 1 // id: %1
+  %2 = tuple ()                                   // user: %3
+  return %2 : $()                                 // id: %3
+} // end sil function '$s11HYSProtocol10HYTeacher2C9ownMethodyyF'
+
+// HYTeacher2.readBooks()
+sil hidden [ossa] @$s11HYSProtocol10HYTeacher2C9readBooksyyF : $@convention(method) (@guaranteed HYTeacher2) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : @guaranteed $HYTeacher2):
+  debug_value %0 : $HYTeacher2, let, name "self", argno 1 // id: %1
+  %2 = tuple ()                                   // user: %3
+  return %2 : $()                                 // id: %3
+} // end sil function '$s11HYSProtocol10HYTeacher2C9readBooksyyF'
+
+// HYTeacher2.__deallocating_deinit
+sil hidden [ossa] @$s11HYSProtocol10HYTeacher2CfD : $@convention(method) (@owned HYTeacher2) -> () {
+// %0 "self"                                      // users: %3, %2, %1
+bb0(%0 : @owned $HYTeacher2):
+  debug_value %0 : $HYTeacher2, let, name "self", argno 1 // id: %1
+  %2 = objc_super_method %0 : $HYTeacher2, #NSObject.deinit!deallocator.foreign : (NSObject) -> () -> (), $@convention(objc_method) (NSObject) -> () // user: %4
+  %3 = upcast %0 : $HYTeacher2 to $NSObject       // users: %5, %4
+  %4 = apply %2(%3) : $@convention(objc_method) (NSObject) -> ()
+  end_lifetime %3 : $NSObject                     // id: %5
+  %6 = tuple ()                                   // user: %7
+  return %6 : $()                                 // id: %7
+} // end sil function '$s11HYSProtocol10HYTeacher2CfD'
+
+// dynamic HYTeacher2.init()
+sil shared [transparent] [serializable] [thunk] [ossa] @$s11HYSProtocol10HYTeacher2CACycfcTD : $@convention(method) (@owned HYTeacher2) -> @owned HYTeacher2 {
+// %0 "self"                                      // users: %2, %1
+bb0(%0 : @owned $HYTeacher2):
+  %1 = objc_method %0 : $HYTeacher2, #HYTeacher2.init!initializer.foreign : (HYTeacher2.Type) -> () -> HYTeacher2, $@convention(objc_method) (@owned HYTeacher2) -> @owned HYTeacher2 // user: %2
+  %2 = apply %1(%0) : $@convention(objc_method) (@owned HYTeacher2) -> @owned HYTeacher2 // user: %3
+  return %2 : $HYTeacher2                         // id: %3
+} // end sil function '$s11HYSProtocol10HYTeacher2CACycfcTD'
+
+// HYTeacher2.init()
+sil hidden [ossa] @$s11HYSProtocol10HYTeacher2CACycfc : $@convention(method) (@owned HYTeacher2) -> @owned HYTeacher2 {
+// %0 "self"                                      // user: %4
+bb0(%0 : @owned $HYTeacher2):
+  %1 = alloc_box ${ var HYTeacher2 }, let, name "self" // user: %2
+  %2 = mark_uninitialized [derivedself] %1 : ${ var HYTeacher2 } // users: %15, %3
+  %3 = project_box %2 : ${ var HYTeacher2 }, 0    // users: %14, %13, %5, %4
+  store %0 to [init] %3 : $*HYTeacher2            // id: %4
+  %5 = load [take] %3 : $*HYTeacher2              // user: %6
+  %6 = upcast %5 : $HYTeacher2 to $NSObject       // users: %11, %7
+  %7 = begin_borrow %6 : $NSObject                // users: %10, %8
+  %8 = unchecked_ref_cast %7 : $NSObject to $HYTeacher2 // user: %9
+  %9 = objc_super_method %8 : $HYTeacher2, #NSObject.init!initializer.foreign : (NSObject.Type) -> () -> NSObject, $@convention(objc_method) (@owned NSObject) -> @owned NSObject // user: %11
+  end_borrow %7 : $NSObject                       // id: %10
+  %11 = apply %9(%6) : $@convention(objc_method) (@owned NSObject) -> @owned NSObject // user: %12
+  %12 = unchecked_ref_cast %11 : $NSObject to $HYTeacher2 // user: %13
+  store %12 to [init] %3 : $*HYTeacher2           // id: %13
+  %14 = load [copy] %3 : $*HYTeacher2             // user: %16
+  destroy_value %2 : ${ var HYTeacher2 }          // id: %15
+  return %14 : $HYTeacher2                        // id: %16
+} // end sil function '$s11HYSProtocol10HYTeacher2CACycfc'
+
+// @objc HYTeacher2.init()
+sil hidden [thunk] [ossa] @$s11HYSProtocol10HYTeacher2CACycfcTo : $@convention(objc_method) (@owned HYTeacher2) -> @owned HYTeacher2 {
+// %0                                             // user: %2
+bb0(%0 : @owned $HYTeacher2):
+  // function_ref HYTeacher2.init()
+  %1 = function_ref @$s11HYSProtocol10HYTeacher2CACycfc : $@convention(method) (@owned HYTeacher2) -> @owned HYTeacher2 // user: %2
+  %2 = apply %1(%0) : $@convention(method) (@owned HYTeacher2) -> @owned HYTeacher2 // user: %3
+  return %2 : $HYTeacher2                         // id: %3
+} // end sil function '$s11HYSProtocol10HYTeacher2CACycfcTo'
+
+// protocol witness for MYProtocol.doSomething() in conformance HYTeacher2
+sil private [transparent] [thunk] [ossa] @$s11HYSProtocol10HYTeacher2CAA10MYProtocolA2aDP11doSomethingyyFTW : $@convention(witness_method: MYProtocol) (@in_guaranteed HYTeacher2) -> () {
+// %0                                             // user: %1
+bb0(%0 : $*HYTeacher2):
+  %1 = load_borrow %0 : $*HYTeacher2              // users: %5, %3, %2
+  %2 = class_method %1 : $HYTeacher2, #HYTeacher2.doSomething : (HYTeacher2) -> () -> (), $@convention(method) (@guaranteed HYTeacher2) -> () // user: %3
+  %3 = apply %2(%1) : $@convention(method) (@guaranteed HYTeacher2) -> ()
+  %4 = tuple ()                                   // user: %6
+  end_borrow %1 : $HYTeacher2                     // id: %5
+  return %4 : $()                                 // id: %6
+} // end sil function '$s11HYSProtocol10HYTeacher2CAA10MYProtocolA2aDP11doSomethingyyFTW'
+
+// protocol witness for static MYProtocol.teach() in conformance HYTeacher2
+sil private [transparent] [thunk] [ossa] @$s11HYSProtocol10HYTeacher2CAA10MYProtocolA2aDP5teachyyFZTW : $@convention(witness_method: MYProtocol) (@thick HYTeacher2.Type) -> () {
+// %0                                             // user: %2
+bb0(%0 : $@thick HYTeacher2.Type):
+  // function_ref static HYTeacher2.teach()
+  %1 = function_ref @$s11HYSProtocol10HYTeacher2C5teachyyFZ : $@convention(method) (@thick HYTeacher2.Type) -> () // user: %2
+  %2 = apply %1(%0) : $@convention(method) (@thick HYTeacher2.Type) -> ()
+  %3 = tuple ()                                   // user: %4
+  return %3 : $()                                 // id: %4
+} // end sil function '$s11HYSProtocol10HYTeacher2CAA10MYProtocolA2aDP5teachyyFZTW'
+
+sil_vtable [serialized] HYSProtocol {
+  #HYSProtocol.name!getter: (HYSProtocol) -> () -> String? : @$s11HYSProtocolAAC4nameSSSgvg	// HYSProtocol.name.getter
+  #HYSProtocol.name!setter: (HYSProtocol) -> (String?) -> () : @$s11HYSProtocolAAC4nameSSSgvs	// HYSProtocol.name.setter
+  #HYSProtocol.name!modify: (HYSProtocol) -> () -> () : @$s11HYSProtocolAAC4nameSSSgvM	// HYSProtocol.name.modify
+  #HYSProtocol.init!allocator: (HYSProtocol.Type) -> () -> HYSProtocol : @$s11HYSProtocolAACABycfC	// HYSProtocol.__allocating_init()
+  #HYSProtocol.hyTest: (HYSProtocol) -> () -> () : @$s11HYSProtocolAAC6hyTestyyF	// HYSProtocol.hyTest()
+  #HYSProtocol.deinit!deallocator: @$s11HYSProtocolAACfD	// HYSProtocol.__deallocating_deinit
+}
+
+sil_vtable HYTeacher2 {
+  #HYTeacher2.doSomething: (HYTeacher2) -> () -> () : @$s11HYSProtocol10HYTeacher2C11doSomethingyyF	// HYTeacher2.doSomething()
+  #HYTeacher2.ownMethod: (HYTeacher2) -> () -> () : @$s11HYSProtocol10HYTeacher2C9ownMethodyyF	// HYTeacher2.ownMethod()
+  #HYTeacher2.readBooks: (HYTeacher2) -> () -> () : @$s11HYSProtocol10HYTeacher2C9readBooksyyF	// HYTeacher2.readBooks()
+  #HYTeacher2.deinit!deallocator: @$s11HYSProtocol10HYTeacher2CfD	// HYTeacher2.__deallocating_deinit
+}
+
+sil_witness_table hidden HYTeacher: MYProtocol module HYSProtocol {
+  method #MYProtocol.doSomething: <Self where Self : MYProtocol> (Self) -> () -> () : @$s11HYSProtocol9HYTeacherVAA10MYProtocolA2aDP11doSomethingyyFTW	// protocol witness for MYProtocol.doSomething() in conformance HYTeacher
+  method #MYProtocol.teach: <Self where Self : MYProtocol> (Self.Type) -> () -> () : @$s11HYSProtocol9HYTeacherVAA10MYProtocolA2aDP5teachyyFZTW	// protocol witness for static MYProtocol.teach() in conformance HYTeacher
+}
+
+sil_witness_table hidden HYTeacher2: MYProtocol module HYSProtocol {
+  method #MYProtocol.doSomething: <Self where Self : MYProtocol> (Self) -> () -> () : @$s11HYSProtocol10HYTeacher2CAA10MYProtocolA2aDP11doSomethingyyFTW	// protocol witness for MYProtocol.doSomething() in conformance HYTeacher2
+  method #MYProtocol.teach: <Self where Self : MYProtocol> (Self.Type) -> () -> () : @$s11HYSProtocol10HYTeacher2CAA10MYProtocolA2aDP5teachyyFZTW	// protocol witness for static MYProtocol.teach() in conformance HYTeacher2
+}
+
+sil_property #HYSProtocol.name ()
+
+
+// Mappings from '#fileID' to '#filePath':
+//   'HYSProtocol/HYSProtocol.swift' => 'HYSProtocol.swift'
+
+

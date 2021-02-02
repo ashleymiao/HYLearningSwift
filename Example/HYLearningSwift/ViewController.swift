@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import HYLearningSwift
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       let pto = HYSProtocol()
+        pto.name = "123"
+        pto.hyTest()
+        
     }
 
     override func didReceiveMemoryWarning() {
